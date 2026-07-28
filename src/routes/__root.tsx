@@ -118,14 +118,14 @@ function RootShell({ children }: { children: ReactNode }) {
 function SiteNav() {
   return (
     <nav className="mx-auto flex max-w-7xl flex-col gap-4 px-6 py-8 md:flex-row md:items-center md:justify-between md:px-12">
-      <div className="flex flex-col">
-        <Link to="/" className="font-display text-2xl font-extrabold uppercase tracking-tighter">
+      <Link to="/" className="flex items-baseline gap-2">
+        <span className="font-display text-2xl font-extrabold uppercase tracking-tighter">
           Common Ground
-        </Link>
-        <span className="text-xs font-medium uppercase tracking-widest text-plum-900/60">
-          Jakala
         </span>
-      </div>
+        <span className="text-xs font-medium uppercase tracking-widest text-plum-900/60">
+          by JAKALA
+        </span>
+      </Link>
       <div className="flex gap-8 text-sm font-medium opacity-60">
         <Link to="/" className="hover:opacity-100">
           Principios
