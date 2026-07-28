@@ -1,9 +1,10 @@
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
+import type { ReactElement } from "react";
 
 import { AutoridadPost } from "@/content/AutoridadPost";
 import { principles } from "@/data/principles";
 
-const bodies: Record<string, () => React.ReactElement> = {
+const bodies: Record<string, () => ReactElement> = {
   autoridad: AutoridadPost,
 };
 
@@ -59,8 +60,9 @@ function PrinciplePost() {
         <h1 className="mb-8 font-display text-4xl font-extrabold leading-tight md:text-5xl">
           La autoridad se reparte por tipo de decisión, no por tema
         </h1>
-        <Body />
       </header>
+
+      <Body />
 
       <footer className="mt-24 flex items-center justify-between border-t border-sage-100 pt-12 text-xs font-bold uppercase tracking-widest text-sage-600">
         <div>VER TAMBIÉN: Declaración, Fases, Umbrales</div>
