@@ -29,7 +29,7 @@ function Index() {
       <header className="mx-auto max-w-7xl px-6 py-16 md:px-12">
         <h1 className="mb-8 max-w-3xl font-display text-5xl font-extrabold leading-[0.9] md:text-7xl">
           Cómo somos las personas y la IA cuando{" "}
-          <span className="text-plum-600">colaboramos.</span>
+          <span className="bg-gradient-to-r from-accent-magenta via-accent-violet to-accent-blue bg-clip-text text-transparent">colaboramos.</span>
         </h1>
         <p className="max-w-xl text-lg leading-relaxed text-plum-900/70">
           Un repositorio vivo de los principios que regulan el reparto de autoridad entre la
@@ -45,7 +45,8 @@ function Index() {
                 key={p.slug}
                 to="/principios/$slug"
                 params={{ slug: p.slug }}
-                className="flex aspect-[4/5] cursor-pointer flex-col justify-between rounded-3xl bg-plum-600 p-8 text-cream shadow-xl shadow-plum-900/10"
+                style={{ backgroundColor: `var(${p.accent})` }}
+                className="flex aspect-[4/5] cursor-pointer flex-col justify-between rounded-3xl p-8 text-cream shadow-xl shadow-plum-900/10 transition-transform hover:-translate-y-1"
               >
                 <div>
                   <div className="mb-12 flex items-start justify-between">
@@ -72,14 +73,15 @@ function Index() {
             ) : (
               <article
                 key={p.slug}
-                className="group flex aspect-[4/5] flex-col justify-between rounded-3xl border border-plum-100 bg-white p-8 transition-colors hover:border-plum-600"
+                style={{ borderColor: `color-mix(in oklab, var(${p.accent}) 35%, white)` }}
+                className="group flex aspect-[4/5] flex-col justify-between rounded-3xl border bg-white p-8 transition-transform hover:-translate-y-1"
               >
                 <div>
                   <div className="mb-12 flex items-start justify-between">
-                    <span className="text-xs font-bold uppercase tracking-widest text-plum-600">
+                    <span className="text-xs font-bold uppercase tracking-widest" style={{ color: `var(${p.accent})` }}>
                       {p.category}
                     </span>
-                    <span className="font-display font-bold text-plum-100 group-hover:text-plum-600">
+                    <span className="font-display font-bold opacity-40" style={{ color: `var(${p.accent})` }}>
                       {p.number}
                     </span>
                   </div>
@@ -87,7 +89,7 @@ function Index() {
                     {p.title}
                   </h2>
                 </div>
-                <div className="text-sm font-medium text-plum-600">PRÓXIMAMENTE</div>
+                <div className="text-sm font-medium" style={{ color: `var(${p.accent})` }}>PRÓXIMAMENTE</div>
               </article>
             ),
           )}
