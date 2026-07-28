@@ -29,9 +29,9 @@ function Index() {
       <header className="mx-auto max-w-7xl px-6 py-16 md:px-12">
         <h1 className="mb-8 max-w-3xl font-display text-5xl font-extrabold leading-[0.9] md:text-7xl">
           Cómo somos las personas y la IA cuando{" "}
-          <span className="text-sage-600">colaboramos.</span>
+          <span className="text-plum-600">colaboramos.</span>
         </h1>
-        <p className="max-w-xl text-lg leading-relaxed text-sage-900/70">
+        <p className="max-w-xl text-lg leading-relaxed text-plum-900/70">
           Un repositorio vivo de los principios que regulan el reparto de autoridad entre la
           intuición humana y la autonomía artificial.
         </p>
@@ -45,7 +45,7 @@ function Index() {
                 key={p.slug}
                 to="/principios/$slug"
                 params={{ slug: p.slug }}
-                className="flex aspect-[4/5] cursor-pointer flex-col justify-between rounded-3xl bg-sage-600 p-8 text-cream shadow-xl shadow-sage-900/10"
+                className="flex aspect-[4/5] cursor-pointer flex-col justify-between rounded-3xl bg-plum-600 p-8 text-cream shadow-xl shadow-plum-900/10"
               >
                 <div>
                   <div className="mb-12 flex items-start justify-between">
@@ -72,22 +72,22 @@ function Index() {
             ) : (
               <article
                 key={p.slug}
-                className="group flex aspect-[4/5] flex-col justify-between rounded-3xl border border-sage-100 bg-white p-8 transition-colors hover:border-sage-600"
+                className="group flex aspect-[4/5] flex-col justify-between rounded-3xl border border-plum-100 bg-white p-8 transition-colors hover:border-plum-600"
               >
                 <div>
                   <div className="mb-12 flex items-start justify-between">
-                    <span className="text-xs font-bold uppercase tracking-widest text-sage-600">
+                    <span className="text-xs font-bold uppercase tracking-widest text-plum-600">
                       {p.category}
                     </span>
-                    <span className="font-display font-bold text-sage-100 group-hover:text-sage-600">
+                    <span className="font-display font-bold text-plum-100 group-hover:text-plum-600">
                       {p.number}
                     </span>
                   </div>
-                  <h2 className="font-display text-3xl font-extrabold leading-tight text-sage-900">
+                  <h2 className="font-display text-3xl font-extrabold leading-tight text-plum-900">
                     {p.title}
                   </h2>
                 </div>
-                <div className="text-sm font-medium text-sage-600">PRÓXIMAMENTE</div>
+                <div className="text-sm font-medium text-plum-600">PRÓXIMAMENTE</div>
               </article>
             ),
           )}
