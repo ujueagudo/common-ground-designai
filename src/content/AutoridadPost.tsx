@@ -183,13 +183,6 @@ export function AutoridadPost() {
           </ul>
         </div>
 
-        <p>
-          Esta regla no cambia nada si queda solo en la cabeza de quien diseña o usa el sistema.
-          Funciona si vive en algún sitio que el propio sistema consulte de verdad (una instrucción
-          persistente, una guía de equipo, un documento de referencia), y si se revisa con los casos
-          reales que la ponen a prueba, igual que cualquier otra norma de trabajo que se quiera
-          hacer cumplir en serio, no solo enunciar.
-        </p>
       </div>
 
       <div className="mt-16 border-t border-plum-100 pt-12">
