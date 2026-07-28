@@ -90,6 +90,48 @@ function Index() {
           )}
         </div>
       </section>
+
+      <section className="mx-auto max-w-7xl px-6 pb-32 md:px-12">
+        <div className="mb-6 flex items-center gap-4">
+          <span className="text-xs font-bold uppercase tracking-widest text-plum-600">
+            Notas de contexto
+          </span>
+          <span className="h-px flex-1 bg-plum-200"></span>
+        </div>
+        <div className="grid grid-cols-1 gap-6">
+          {notes
+            .filter((n) => n.published)
+            .map((n) => (
+              <Link
+                key={n.slug}
+                to="/notas/$slug"
+                params={{ slug: n.slug }}
+                style={{ borderColor: `var(${n.accent})` }}
+                className="flex flex-col justify-between gap-6 rounded-3xl border-2 bg-white p-6 transition-transform hover:-translate-y-1 md:flex-row md:items-end md:p-10"
+              >
+                <div className="max-w-2xl">
+                  <span
+                    className="text-xs font-bold uppercase tracking-widest"
+                    style={{ color: `var(${n.accent})` }}
+                  >
+                    {n.kicker}
+                  </span>
+                  <h2 className="mb-3 mt-4 font-display text-2xl font-extrabold leading-tight text-plum-900 md:text-4xl">
+                    {n.title}
+                  </h2>
+                  <p className="leading-relaxed text-plum-900/70">{n.summary}</p>
+                </div>
+                <div
+                  className="flex shrink-0 items-center gap-2 text-sm font-bold uppercase tracking-widest"
+                  style={{ color: `var(${n.accent})` }}
+                >
+                  Leer nota <span className="text-lg">→</span>
+                </div>
+              </Link>
+            ))}
+        </div>
+      </section>
     </>
   );
 }
+
