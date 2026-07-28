@@ -38,11 +38,11 @@
 
   body {
     background-color: var(--color-cream);
-    color: var(--color-sage-900);
+    color: var(--color-plum-900);
     font-family: var(--font-body);
   }
 
   ::selection {
-    background-color: color-mix(in oklab, var(--color-sage-600) 20%, transparent);
+    background-color: color-mix(in oklab, var(--color-plum-600) 20%, transparent);
   }
 }
