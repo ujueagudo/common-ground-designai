@@ -135,20 +135,20 @@ function SiteNav() {
 
 function SiteFooter() {
   return (
-    <footer className="mt-24 bg-sage-100 px-6 py-16 md:px-12">
+    <footer className="mt-24 bg-plum-100 px-6 py-16 md:px-12">
       <div className="mx-auto flex max-w-7xl flex-col justify-between gap-12 md:flex-row">
         <div className="max-w-xs">
           <div className="mb-4 font-display text-xl font-extrabold uppercase tracking-tighter">
             Criterio Compartido
           </div>
-          <p className="text-sm text-sage-900/60">
+          <p className="text-sm text-plum-900/60">
             Un cuaderno de investigación sobre el reparto de autoridad entre la intuición humana y
             la autonomía de las máquinas.
           </p>
         </div>
         <div className="flex gap-24">
           <div className="space-y-2">
-            <div className="mb-4 text-[10px] font-bold uppercase tracking-widest text-sage-600">
+            <div className="mb-4 text-[10px] font-bold uppercase tracking-widest text-plum-600">
               Navegación
             </div>
             <Link to="/" className="block text-sm">
@@ -169,7 +169,7 @@ function RootComponent() {
 
   return (
     <QueryClientProvider client={queryClient}>
-      <div className="min-h-screen bg-cream font-body text-sage-900">
+      <div className="min-h-screen bg-cream font-body text-plum-900">
         <SiteNav />
         {/* Required: nested routes render here. Removing <Outlet /> breaks all child routes. */}
         <Outlet />
