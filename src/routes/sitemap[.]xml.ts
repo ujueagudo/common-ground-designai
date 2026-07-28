@@ -1,6 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import type {} from "@tanstack/react-start";
 
+import { notes } from "@/data/notes";
 import { principles } from "@/data/principles";
 
 // TODO: sustituir por la URL del proyecto cuando haya nombre o dominio propio.
@@ -23,6 +24,13 @@ export const Route = createFileRoute("/sitemap.xml")({
             .filter((p) => p.published)
             .map((p) => ({
               path: `/principios/${p.slug}`,
+              changefreq: "monthly" as const,
+              priority: "0.8",
+            })),
+          ...notes
+            .filter((n) => n.published)
+            .map((n) => ({
+              path: `/notas/${n.slug}`,
               changefreq: "monthly" as const,
               priority: "0.8",
             })),
