@@ -143,8 +143,13 @@ function SiteFooter() {
     <footer className="mt-24 bg-plum-100 px-6 py-16 md:px-12">
       <div className="mx-auto flex max-w-7xl flex-col justify-between gap-12 md:flex-row">
         <div className="max-w-xs">
-          <div className="mb-4 font-display text-xl font-extrabold uppercase tracking-tighter">
-            Common Ground
+          <div className="mb-4 flex flex-wrap items-baseline gap-2">
+            <span className="font-display text-xl font-extrabold uppercase tracking-tighter">
+              Common Ground
+            </span>
+            <span className="text-xs font-medium uppercase tracking-widest text-plum-900/60">
+              by JAKALA
+            </span>
           </div>
           <p className="text-sm text-plum-900/60">
             Un repositorio de investigación sobre el reparto de tareas y la búsqueda de la sinergia
