@@ -118,14 +118,14 @@ function RootShell({ children }: { children: ReactNode }) {
 function SiteNav() {
   return (
     <nav className="mx-auto flex max-w-7xl flex-col gap-4 px-6 py-8 md:flex-row md:items-center md:justify-between md:px-12">
-      <div className="flex flex-col">
-        <Link to="/" className="font-display text-2xl font-extrabold uppercase tracking-tighter">
+      <Link to="/" className="flex items-baseline gap-2">
+        <span className="font-display text-2xl font-extrabold uppercase tracking-tighter">
           Common Ground
-        </Link>
-        <span className="text-xs font-medium uppercase tracking-widest text-plum-900/60">
-          Jakala
         </span>
-      </div>
+        <span className="text-xs font-medium uppercase tracking-widest text-plum-900/60">
+          by JAKALA
+        </span>
+      </Link>
       <div className="flex gap-8 text-sm font-medium opacity-60">
         <Link to="/" className="hover:opacity-100">
           Principios
@@ -143,8 +143,13 @@ function SiteFooter() {
     <footer className="mt-24 bg-plum-100 px-6 py-16 md:px-12">
       <div className="mx-auto flex max-w-7xl flex-col justify-between gap-12 md:flex-row">
         <div className="max-w-xs">
-          <div className="mb-4 font-display text-xl font-extrabold uppercase tracking-tighter">
-            Common Ground
+          <div className="mb-4 flex flex-wrap items-baseline gap-2">
+            <span className="font-display text-xl font-extrabold uppercase tracking-tighter">
+              Common Ground
+            </span>
+            <span className="text-xs font-medium uppercase tracking-widest text-plum-900/60">
+              by JAKALA
+            </span>
           </div>
           <p className="text-sm text-plum-900/60">
             Un repositorio de investigación sobre el reparto de tareas y la búsqueda de la sinergia
