@@ -4,8 +4,7 @@ import type {} from "@tanstack/react-start";
 import { notes } from "@/data/notes";
 import { principles } from "@/data/principles";
 
-// TODO: sustituir por la URL del proyecto cuando haya nombre o dominio propio.
-const BASE_URL = "";
+const BASE_URL = "https://shared-wisdom-craft.lovable.app";
 
 interface SitemapEntry {
   path: string;
