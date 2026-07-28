@@ -3,17 +3,17 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 export const Route = createFileRoute("/sobre-el-proyecto")({
   head: () => ({
     meta: [
-      { title: "Sobre el proyecto — Criterio Compartido" },
+      { title: "Sobre el proyecto — Common Ground" },
       {
         name: "description",
         content:
-          "Por qué existe este cuaderno de principios sobre colaboración entre personas e inteligencia artificial.",
+          "Repositorio de los principios que regulan el reparto de tareas y la búsqueda de la sinergia entre diseñadores e IA.",
       },
-      { property: "og:title", content: "Sobre el proyecto — Criterio Compartido" },
+      { property: "og:title", content: "Sobre el proyecto — Common Ground" },
       {
         property: "og:description",
         content:
-          "Por qué existe este cuaderno de principios sobre colaboración entre personas e inteligencia artificial.",
+          "Repositorio de los principios que regulan el reparto de tareas y la búsqueda de la sinergia entre diseñadores e IA.",
       },
     ],
   }),
@@ -28,15 +28,14 @@ function About() {
       </h1>
       <div className="space-y-6 text-lg leading-relaxed text-plum-900/80">
         <p>
-          Este cuaderno recoge, uno a uno, los principios que regulan cómo deberían colaborar las
-          personas y los sistemas de IA. Cada principio se publica como un texto independiente:
-          de dónde viene la idea, qué evidencia la sostiene, dónde falla y qué regla concreta se
-          puede copiar y usar.
+          Common Ground es un repositorio vivo de los principios que regulan el reparto de tareas
+          y la búsqueda de la sinergia entre diseñadores e inteligencia artificial.
         </p>
         <p>
-          No es un manifiesto ni una lista de buenas intenciones. Cada entrada termina en algo que
-          se pueda escribir en una instrucción persistente, una guía de equipo o un documento de
-          referencia, y que se pueda revisar con los casos reales que la ponen a prueba.
+          No es un manifiesto ni una lista de buenas intenciones. Cada principio se publica como un
+          texto independiente — de dónde viene la idea, qué evidencia la sostiene, dónde falla y
+          qué regla concreta se puede copiar y usar en una instrucción persistente, una guía de
+          equipo o un documento de referencia.
         </p>
       </div>
       <div className="mt-16 border-t border-plum-100 pt-12">
