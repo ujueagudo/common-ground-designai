@@ -1,6 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 
-import ilustracionAutoridad from "@/assets/principio-autoridad.jpg";
+
 import { principles } from "@/data/principles";
 
 export const Route = createFileRoute("/")({
@@ -60,13 +60,6 @@ function Index() {
                   <h2 className="mb-4 font-display text-xl font-extrabold leading-tight md:text-3xl">
                     {p.title}
                   </h2>
-                  <img
-                    src={ilustracionAutoridad}
-                    alt="Una balanza con una mano humana en un platillo y un chip en el otro"
-                    width={1024}
-                    height={768}
-                    className="mt-4 aspect-[4/3] w-full rounded-xl object-cover md:mt-6"
-                  />
                 </div>
                 <div className="mt-6 flex items-center gap-2 text-sm font-medium md:mt-8">
                   LEER PRINCIPIO <span className="text-lg">→</span>
