@@ -6,17 +6,17 @@ import { principles } from "@/data/principles";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Criterio Compartido — Principios de colaboración humano-IA" },
+      { title: "Common Ground — Principios de colaboración Diseño × IA" },
       {
         name: "description",
         content:
-          "Índice de principios que regulan cómo deben colaborar personas y sistemas de IA: autoridad, declaración, fases, memoria y umbrales.",
+          "Repositorio de los principios que regulan el reparto de tareas y la búsqueda de la sinergia entre diseñadores e IA.",
       },
-      { property: "og:title", content: "Criterio Compartido — Principios de colaboración humano-IA" },
+      { property: "og:title", content: "Common Ground — Principios de colaboración Diseño × IA" },
       {
         property: "og:description",
         content:
-          "Un cuaderno de principios sobre autonomía, autoridad y criterio compartido entre personas e IA.",
+          "Un decálogo de la colaboración entre diseño e inteligencia artificial.",
       },
     ],
   }),
@@ -27,13 +27,15 @@ function Index() {
   return (
     <>
       <header className="mx-auto max-w-7xl px-6 py-16 md:px-12">
-        <h1 className="mb-8 max-w-3xl font-display text-5xl font-extrabold leading-[0.9] md:text-7xl">
-          Cómo somos las personas y la IA cuando{" "}
-          <span className="bg-gradient-to-r from-accent-magenta via-accent-violet to-accent-blue bg-clip-text text-transparent">colaboramos.</span>
+        <h1 className="mb-4 max-w-4xl font-display text-6xl font-extrabold leading-[0.9] md:text-8xl">
+          Common Ground
         </h1>
+        <p className="mb-8 max-w-2xl font-display text-2xl font-extrabold leading-tight text-plum-900 md:text-3xl">
+          Principios de colaboración Diseño × IA
+        </p>
         <p className="max-w-xl text-lg leading-relaxed text-plum-900/70">
-          Un repositorio vivo de los principios que regulan el reparto de autoridad entre la
-          intuición humana y la autonomía artificial.
+          Un repositorio vivo de los principios que regulan el reparto de tareas y la búsqueda de la
+          sinergia entre diseñadores e inteligencia artificial.
         </p>
       </header>
 
@@ -46,16 +48,16 @@ function Index() {
                 to="/principios/$slug"
                 params={{ slug: p.slug }}
                 style={{ backgroundColor: `var(${p.accent})` }}
-                className="flex aspect-[4/5] cursor-pointer flex-col justify-between rounded-3xl p-8 text-cream shadow-xl shadow-plum-900/10 transition-transform hover:-translate-y-1"
+                className="flex min-h-[180px] cursor-pointer flex-col justify-between rounded-3xl p-6 text-cream shadow-xl shadow-plum-900/10 transition-transform hover:-translate-y-1 md:aspect-[4/5] md:p-8"
               >
                 <div>
-                  <div className="mb-12 flex items-start justify-between">
+                  <div className="mb-6 flex items-start justify-between md:mb-12">
                     <span className="text-xs font-bold uppercase tracking-widest opacity-80">
                       {p.category}
                     </span>
                     <span className="font-display font-bold">{p.number}</span>
                   </div>
-                  <h2 className="mb-4 font-display text-3xl font-extrabold leading-tight">
+                  <h2 className="mb-4 font-display text-xl font-extrabold leading-tight md:text-3xl">
                     {p.title}
                   </h2>
                   <img
@@ -63,10 +65,10 @@ function Index() {
                     alt="Una balanza con una mano humana en un platillo y un chip en el otro"
                     width={1024}
                     height={768}
-                    className="mt-6 aspect-[4/3] w-full rounded-xl object-cover"
+                    className="mt-4 aspect-[4/3] w-full rounded-xl object-cover md:mt-6"
                   />
                 </div>
-                <div className="mt-8 flex items-center gap-2 text-sm font-medium">
+                <div className="mt-6 flex items-center gap-2 text-sm font-medium md:mt-8">
                   LEER PRINCIPIO <span className="text-lg">→</span>
                 </div>
               </Link>
@@ -74,10 +76,10 @@ function Index() {
               <article
                 key={p.slug}
                 style={{ borderColor: `color-mix(in oklab, var(${p.accent}) 35%, white)` }}
-                className="group flex aspect-[4/5] flex-col justify-between rounded-3xl border bg-white p-8 transition-transform hover:-translate-y-1"
+                className="group flex min-h-[180px] flex-col justify-between rounded-3xl border bg-white p-6 transition-transform hover:-translate-y-1 md:aspect-[4/5] md:p-8"
               >
                 <div>
-                  <div className="mb-12 flex items-start justify-between">
+                  <div className="mb-6 flex items-start justify-between md:mb-12">
                     <span className="text-xs font-bold uppercase tracking-widest" style={{ color: `var(${p.accent})` }}>
                       {p.category}
                     </span>
@@ -85,7 +87,7 @@ function Index() {
                       {p.number}
                     </span>
                   </div>
-                  <h2 className="font-display text-3xl font-extrabold leading-tight text-plum-900">
+                  <h2 className="font-display text-xl font-extrabold leading-tight text-plum-900 md:text-3xl">
                     {p.title}
                   </h2>
                 </div>

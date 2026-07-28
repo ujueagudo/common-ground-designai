@@ -77,7 +77,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { name: "author", content: "Principios de colaboración humano-IA" },
+      { name: "author", content: "Common Ground" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
@@ -117,10 +117,15 @@ function RootShell({ children }: { children: ReactNode }) {
 
 function SiteNav() {
   return (
-    <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-8 md:px-12">
-      <Link to="/" className="font-display text-2xl font-extrabold uppercase tracking-tighter">
-        Criterio Compartido
-      </Link>
+    <nav className="mx-auto flex max-w-7xl flex-col gap-4 px-6 py-8 md:flex-row md:items-center md:justify-between md:px-12">
+      <div className="flex flex-col">
+        <Link to="/" className="font-display text-2xl font-extrabold uppercase tracking-tighter">
+          Common Ground
+        </Link>
+        <span className="text-xs font-medium uppercase tracking-widest text-plum-900/60">
+          Jakala
+        </span>
+      </div>
       <div className="flex gap-8 text-sm font-medium opacity-60">
         <Link to="/" className="hover:opacity-100">
           Principios
@@ -139,11 +144,11 @@ function SiteFooter() {
       <div className="mx-auto flex max-w-7xl flex-col justify-between gap-12 md:flex-row">
         <div className="max-w-xs">
           <div className="mb-4 font-display text-xl font-extrabold uppercase tracking-tighter">
-            Criterio Compartido
+            Common Ground
           </div>
           <p className="text-sm text-plum-900/60">
-            Un cuaderno de investigación sobre el reparto de autoridad entre la intuición humana y
-            la autonomía de las máquinas.
+            Un repositorio de investigación sobre el reparto de tareas y la búsqueda de la sinergia
+            entre diseñadores e inteligencia artificial.
           </p>
         </div>
         <div className="flex gap-24">
@@ -178,4 +183,3 @@ function RootComponent() {
     </QueryClientProvider>
   );
 }
-

@@ -17,11 +17,11 @@ export const Route = createFileRoute("/principios/$slug")({
   head: ({ loaderData }) => {
     if (!loaderData) {
       return {
-        meta: [{ title: "No disponible — Criterio Compartido" }, { name: "robots", content: "noindex" }],
+        meta: [{ title: "No disponible — Common Ground" }, { name: "robots", content: "noindex" }],
       };
     }
     const { principle } = loaderData;
-    const title = `${principle.title} — Criterio Compartido`;
+    const title = `${principle.title} — Common Ground`;
     return {
       meta: [
         { title },
@@ -58,14 +58,14 @@ function PrinciplePost() {
           <span>{principle.category}</span>
         </div>
         <h1 className="mb-8 font-display text-4xl font-extrabold leading-tight md:text-5xl">
-          La autoridad se reparte por tipo de decisión, no por tema
+          {principle.title}
         </h1>
       </header>
 
       <Body />
 
       <footer className="mt-24 flex items-center justify-between border-t border-plum-100 pt-12 text-xs font-bold uppercase tracking-widest text-plum-600">
-        <div>VER TAMBIÉN: Declaración, Fases, Umbrales</div>
+        <div>Common Ground · Principios de colaboración Diseño × IA</div>
         <Link
           to="/"
           className="rounded-full border border-plum-600 px-4 py-2 transition-colors hover:bg-plum-600 hover:text-cream"
