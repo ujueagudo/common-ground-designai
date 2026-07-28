@@ -1,6 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 
 
+import { notes } from "@/data/notes";
 import { principles } from "@/data/principles";
 
 export const Route = createFileRoute("/")({
