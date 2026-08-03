@@ -1,6 +1,6 @@
 import ilustracionAutoridad from "@/assets/principio-autoridad.jpg";
 
-export function AutoridadPost() {
+export function AutonomiaPost() {
   return (
     <>
       <img

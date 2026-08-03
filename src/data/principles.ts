@@ -11,9 +11,9 @@ export type Principle = {
 export const principles: Principle[] = [
   {
     number: "01",
-    slug: "autoridad",
-    category: "Autoridad",
-    title: "Autoridad según incertidumbre y coste de error",
+    slug: "autonomia",
+    category: "Autonomía",
+    title: "Autonomía según incertidumbre y coste de error",
     summary:
       "Lo que decide si la IA puede actuar sola no es de qué trata la tarea, sino la incertidumbre sobre la intención y el coste de deshacer el error.",
     published: true,
