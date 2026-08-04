@@ -13,6 +13,19 @@ export function AutonomiaPost() {
 
       <div className="space-y-6 text-lg leading-relaxed text-plum-900/80">
         <p>
+          Tienes que preparar una presentación para un cliente. En el proceso habitual,
+          hubieses pensado activamente cada frase y decidido qué datos destacar y cuáles
+          descartar. Como ahora tienes IA, decides delegarle la tarea. Y sin ser consciente, tu
+          foco de atención se desplaza de construir el discurso a revisar su trabajo. El
+          resultado impresiona y todo parece coherente hasta que el cliente te hace una
+          pregunta que no sabes responder y descubres que has perdido el control sobre tu
+          propio razonamiento.
+        </p>
+
+        <h2 className="pt-8 font-display text-2xl font-extrabold text-plum-900">
+          El principio
+        </h2>
+        <p>
           Un sistema de IA no debe asumir autonomía basándose en su capacidad técnica para
           realizar una tarea, sino en tres factores:{" "}
           <strong className="font-semibold text-plum-900">
@@ -148,7 +161,8 @@ export function AutonomiaPost() {
             La regla
           </h2>
           <p className="mb-8 leading-relaxed opacity-90">
-            Copiar en las instrucciones del asistente.
+            Copiar en las instrucciones del asistente
+            <sup className="px-0.5 text-plum-300">*</sup>.
           </p>
           <p className="mb-2 text-sm font-bold uppercase tracking-wide text-cream/70">
             1. Filtro autoral
@@ -211,6 +225,13 @@ export function AutonomiaPost() {
             </li>
           </ul>
         </div>
+        <p className="-mt-2 text-xs leading-relaxed text-plum-900/50">
+          <span className="mr-1 font-medium text-plum-900/70">*</span>
+          Para usar esta instrucción, pégala en: ChatGPT, Instrucciones personalizadas; Gemini,
+          instrucciones de un Gem; Claude (chat), Instrucciones personalizadas o de Proyecto;
+          Claude Code y Claude Cowork, un archivo CLAUDE.md. El peso que le da cada modelo no
+          tiene por qué ser igual: probada con Claude Code, no verificada en el resto.
+        </p>
       </div>
 
       <div className="mt-16 border-t border-plum-100 pt-12">
