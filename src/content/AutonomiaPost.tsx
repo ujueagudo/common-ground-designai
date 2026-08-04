@@ -13,17 +13,65 @@ export function AutonomiaPost() {
 
       <div className="space-y-6 text-lg leading-relaxed text-plum-900/80">
         <p>
-          Un sistema de IA no debe asumir autonomía basándose en su capacidad para ejecutar una
-          tarea, sino en{" "}
+          Un sistema de IA no debe asumir autonomía basándose en su capacidad técnica para
+          realizar una tarea, sino en tres factores:{" "}
           <strong className="font-semibold text-plum-900">
             la preservación de la responsabilidad autoral del usuario, el nivel de incertidumbre y
-            el coste del error
+            el coste de error
           </strong>
           .
         </p>
 
         <h2 className="pt-8 font-display text-2xl font-extrabold text-plum-900">
-          Complacencia y pérdida de criterio
+          Qué es este principio
+        </h2>
+        <p>
+          Es un marco de decisión para calibrar cuándo una IA debe actuar por su cuenta y cuándo
+          debe detenerse a preguntar. Evita que el asistente tome la iniciativa en decisiones
+          críticas o interpretativas, de forma que la persona mantenga el control real sobre el
+          proceso, no solo sobre el resultado final.
+        </p>
+
+        <h2 className="pt-8 font-display text-2xl font-extrabold text-plum-900">
+          Por qué ocurre el problema
+        </h2>
+        <p>
+          Cuando se colabora con modelos de lenguaje se cruzan dos dinámicas que dificultan la
+          supervisión.
+        </p>
+        <p>
+          <strong className="font-semibold text-plum-900">1. Los sesgos de la IA.</strong>
+        </p>
+        <div className="rounded-2xl bg-plum-50 p-8">
+          <ul className="space-y-3 text-base">
+            <li>
+              <strong className="font-semibold text-plum-900">
+                Sesgo de sobreejecución (bias towards action):
+              </strong>{" "}
+              la IA tiende a entregar el trabajo terminado de inmediato ante cualquier instrucción
+              ambigua, en lugar de preguntar si solo se buscaba aportarle contexto.
+            </li>
+            <li>
+              <strong className="font-semibold text-plum-900">Cierre prematuro:</strong> el modelo
+              suele dar por buena una solución temprana para optimizar recursos computacionales,
+              sin explorar más alternativas.
+            </li>
+            <li>
+              <strong className="font-semibold text-plum-900">Atajos de lectura:</strong> tiende a
+              apoyarse en su memoria de entrenamiento o en la información más accesible antes que
+              verificar de forma exhaustiva los datos del contexto.
+            </li>
+          </ul>
+        </div>
+        <p>
+          <strong className="font-semibold text-plum-900">2. La fatiga de supervisión humana.</strong>{" "}
+          La investigación sobre automatización demuestra que las personas tienden a aceptar por
+          defecto lo que el sistema propone, por pura economía cognitiva. Tener la posibilidad de
+          corregir a la IA no significa que esa corrección se ejerza de verdad.
+        </p>
+
+        <h2 className="pt-8 font-display text-2xl font-extrabold text-plum-900">
+          El riesgo: la ilusión de profundidad explicativa
         </h2>
         <p>
           Delegar de forma indiscriminada tareas interpretativas o decisiones intermedias genera
@@ -31,31 +79,46 @@ export function AutonomiaPost() {
           <strong className="font-semibold text-plum-900">
             ilusión de profundidad explicativa
           </strong>
-          : la falsa sensación de dominar un proceso o resultado que en realidad no se sabría
-          justificar paso a paso<sup className="px-0.5 text-plum-600">1</sup>.
+          : la falsa sensación de que se entiende un proceso o una propuesta simplemente porque el
+          resultado final es coherente y estético
+          <sup className="px-0.5 text-plum-600">1</sup>.
         </p>
         <p>
-          Además, los modelos de lenguaje tienden a la sobreejecución (sesgo de acción) y al
-          cierre prematuro para optimizar cómputo. Si el sistema actúa por defecto sin calibrar la
-          ambigüedad, reduce la supervisión activa del usuario por pura fatiga cognitiva.
+          Cuando una persona no ha atravesado el proceso de decidir qué entra, qué sale y por qué,
+          pierde la capacidad de defender y justificar esa propuesta ante un cliente o un equipo.
         </p>
+        <div className="rounded-2xl bg-plum-50 p-8">
+          <p className="mb-2 text-sm font-bold uppercase tracking-wide text-plum-900/60">
+            Lo que dicen los datos
+          </p>
+          <p>
+            En análisis de proyectos asistidos por IA, los usuarios novatos abandonan la tarea un{" "}
+            <strong className="font-semibold text-plum-900">19% de las veces</strong> frente al{" "}
+            <strong className="font-semibold text-plum-900">5%</strong> de los expertos
+            <sup className="px-0.5 text-plum-600">2</sup>. La diferencia no está en la
+            herramienta, sino en saber reconocer cuándo un resultado requiere supervisión crítica.
+          </p>
+        </div>
 
         <h2 className="pt-8 font-display text-2xl font-extrabold text-plum-900">
-          Dos capas de delegación
+          Cómo aplicar el principio: dos capas
         </h2>
-        <p>La autonomía del sistema se gestiona evaluando dos preguntas consecutivas.</p>
+        <p>
+          Para calibrar la autonomía del asistente, la interacción se filtra en dos niveles
+          consecutivos.
+        </p>
         <div className="rounded-2xl bg-plum-50 p-8">
           <p className="mb-4 font-semibold text-plum-900">
             ¿La tarea requiere juicio interpretativo o autoral?
           </p>
           <ul className="space-y-3 text-base">
             <li>
-              <strong className="font-semibold text-plum-900">Sí:</strong> filtro autoral.
+              <strong className="font-semibold text-plum-900">Sí:</strong> capa 1, filtro autoral.
               Detenerse y ofrecer despiece.
             </li>
             <li>
-              <strong className="font-semibold text-plum-900">No:</strong> evaluar incertidumbre y
-              coste de error.
+              <strong className="font-semibold text-plum-900">No:</strong> capa 2, matriz de
+              Horvitz. Evaluar incertidumbre y coste de error.
             </li>
           </ul>
           <div className="pl-1 pt-1 text-plum-600">↓</div>
@@ -68,25 +131,35 @@ export function AutonomiaPost() {
               declarar.
             </li>
             <li>
-              Incertidumbre alta y coste alto <span className="text-plum-600">→</span> preguntar
-              antes.
+              Incertidumbre alta y coste alto <span className="text-plum-600">→</span> detenerse y
+              preguntar.
             </li>
           </ul>
         </div>
         <p>
-          <strong className="font-semibold text-plum-900">1. Filtro autoral.</strong> El trabajo
-          no se reparte por fases ("la IA al principio, la persona al final"), sino por
-          responsabilidad. Todo lo que constituya el núcleo conceptual que el usuario deba
-          defender o sostener queda bajo su control explícito
+          <strong className="font-semibold text-plum-900">Capa 1: el filtro autoral.</strong> El
+          trabajo no se reparte por fases ("la IA al principio, la persona al final"), sino por
+          responsabilidad. Todo lo que constituya el núcleo conceptual, interpretativo o
+          estratégico que la persona deba defender debe permanecer bajo su control directo
           <sup className="px-0.5 text-plum-600">3</sup>.
         </p>
         <p>
-          <strong className="font-semibold text-plum-900">2. Matriz de Horvitz.</strong> Para
-          tareas operativas, el nivel de autonomía se calibra según la incertidumbre (cuánta
-          certeza existe sobre la intención real del usuario) y el coste de error (qué impacto
-          tiene el fallo y cómo de fácil es revertirlo)
-          <sup className="px-0.5 text-plum-600">2</sup>.
+          <strong className="font-semibold text-plum-900">Capa 2: la matriz de Horvitz.</strong>{" "}
+          Para tareas operativas o mecánicas, la autonomía se rige por dos variables formuladas
+          por Eric Horvitz en 1999<sup className="px-0.5 text-plum-600">4</sup>:
         </p>
+        <div className="rounded-2xl bg-plum-50 p-8">
+          <ul className="space-y-3 text-base">
+            <li>
+              <strong className="font-semibold text-plum-900">Incertidumbre:</strong> cuánta
+              certeza existe sobre la intención real del usuario.
+            </li>
+            <li>
+              <strong className="font-semibold text-plum-900">Coste de error:</strong> qué impacto
+              tiene un fallo y cómo de fácil es deshacerlo.
+            </li>
+          </ul>
+        </div>
 
         {/* La regla */}
         <div className="my-16 rounded-3xl bg-plum-900 p-10 text-cream shadow-2xl">
@@ -100,36 +173,36 @@ export function AutonomiaPost() {
             1. Filtro autoral
           </p>
           <p className="mb-8 leading-relaxed opacity-90">
-            Si la solicitud involucra una decisión interpretativa, estratégica o autoral, no
-            generar el resultado final directamente. Ofrecer el despiece:{" "}
+            Si la solicitud involucra decisiones interpretativas, conceptuales o estratégicas, no
+            generar la solución final directamente. Detenerse y ofrecer opciones:{" "}
             <em>
-              "Esta tarea tiene un componente interpretativo. Puedo realizar la estructura o los
-              datos y dejarte la redacción o definición final, o proponerte preguntas para
-              desarrollarla juntos."
+              "Esta tarea tiene un componente interpretativo. Puedo realizar la
+              recopilación/estructura inicial y dejarte la definición final, o proponerte
+              preguntas para desarrollarla juntos."
             </em>
           </p>
           <p className="mb-2 text-sm font-bold uppercase tracking-wide text-cream/70">
-            2. Matriz de ejecución
+            2. Evaluación de ejecución (matriz de Horvitz)
           </p>
           <ul className="space-y-4 text-sm font-medium">
             <li className="flex gap-3">
-              <span className="text-plum-600">●</span> Incertidumbre baja y coste bajo: actuar
-              directamente.
+              <span className="text-plum-600">●</span> Incertidumbre baja y coste de error bajo:
+              actuar sin preguntar.
             </li>
             <li className="flex gap-3">
-              <span className="text-plum-600">●</span> Incertidumbre alta o coste alto (solo una):
-              actuar, declarando qué se ha decidido y por qué.
+              <span className="text-plum-600">●</span> Incertidumbre alta o coste de error alto
+              (solo una): actuar, pero declarar explícitamente qué se ha decidido y por qué.
             </li>
             <li className="flex gap-3">
-              <span className="text-plum-600">●</span> Incertidumbre alta y coste alto: detenerse
-              y solicitar confirmación explícita antes de proceder.
+              <span className="text-plum-600">●</span> Incertidumbre alta y coste de error alto:
+              detenerse y solicitar confirmación antes de ejecutar.
             </li>
           </ul>
           <p className="mt-8 leading-relaxed opacity-90">
-            <strong className="font-semibold text-cream">Ajuste dinámico:</strong> si el usuario
-            valida reiteradamente un tipo de decisión, baja el umbral de consulta para ese
-            contexto. Si el usuario corrige una decisión, sube el umbral de supervisión de
-            inmediato.
+            <strong className="font-semibold text-cream">Recalibración dinámica:</strong> si el
+            usuario aprueba reiteradamente un tipo de decisión sin correcciones, se reduce la
+            necesidad de consultar en ese terreno. Si el usuario corrige una decisión, se eleva el
+            umbral de supervisión de inmediato.
           </p>
         </div>
 
@@ -145,9 +218,21 @@ export function AutonomiaPost() {
               Creer que se entiende un proceso mucho mejor de lo que realmente se hace.
             </li>
             <li>
-              <strong className="font-semibold text-plum-900">Sesgo de acción del modelo.</strong>{" "}
-              Sobreejecución y cierre prematuro ante un contexto o una instrucción ambigua, para
-              optimizar cómputo.
+              <strong className="font-semibold text-plum-900">Sesgo de sobreejecución.</strong>{" "}
+              Entregar el trabajo terminado ante una instrucción ambigua en vez de preguntar.
+            </li>
+            <li>
+              <strong className="font-semibold text-plum-900">Cierre prematuro.</strong> Dar por
+              válida una solución temprana para optimizar el esfuerzo computacional.
+            </li>
+            <li>
+              <strong className="font-semibold text-plum-900">Atajos de lectura.</strong>{" "}
+              Priorizar información fácilmente accesible frente a la verificación exhaustiva.
+            </li>
+            <li>
+              <strong className="font-semibold text-plum-900">Fatiga de supervisión.</strong>{" "}
+              Aceptar por defecto las propuestas de un sistema por reducción de esfuerzo
+              cognitivo.
             </li>
           </ul>
         </div>
@@ -164,14 +249,19 @@ export function AutonomiaPost() {
             Cognitive Science, 26(5), 521-562.
           </li>
           <li>
-            <span className="mr-2 font-medium text-plum-900">[2]</span> Horvitz, E. (1999).
-            Principles of Mixed-Initiative User Interfaces. Proceedings of the SIGCHI Conference
-            on Human Factors in Computing Systems (CHI '99), 159-166. ACM.
+            <span className="mr-2 font-medium text-plum-900">[2]</span> Hitzig, Z., Massenkoff,
+            M., Lyubich, E., Heller, R., & McCrory, P. (2026). Agentic coding and persistent
+            returns to expertise. Anthropic Research.
           </li>
           <li>
             <span className="mr-2 font-medium text-plum-900">[3]</span> Verhagen, R. S., Neerincx,
             M. A., & Tielman, M. L. (2025). Agent Allocation of Moral Decisions in Human-Agent
             Teams. Proceedings of FAccT '25, 2302-2317.
+          </li>
+          <li>
+            <span className="mr-2 font-medium text-plum-900">[4]</span> Horvitz, E. (1999).
+            Principles of Mixed-Initiative User Interfaces. Proceedings of the SIGCHI Conference
+            on Human Factors in Computing Systems (CHI '99), 159-166. ACM.
           </li>
         </ol>
       </div>
