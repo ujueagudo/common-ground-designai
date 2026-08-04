@@ -186,37 +186,6 @@ export function AutonomiaPost() {
             umbral de supervisión de inmediato.
           </p>
         </div>
-
-        <h2 className="pt-8 font-display text-2xl font-extrabold text-plum-900">
-          Sesgos en juego
-        </h2>
-        <div className="rounded-2xl bg-plum-50 p-8">
-          <ul className="space-y-3 text-base">
-            <li>
-              <strong className="font-semibold text-plum-900">
-                Ilusión de profundidad explicativa.
-              </strong>{" "}
-              Creer que se entiende un proceso mucho mejor de lo que realmente se hace.
-            </li>
-            <li>
-              <strong className="font-semibold text-plum-900">Sesgo de sobreejecución.</strong>{" "}
-              Entregar el trabajo terminado ante una instrucción ambigua en vez de preguntar.
-            </li>
-            <li>
-              <strong className="font-semibold text-plum-900">Cierre prematuro.</strong> Dar por
-              válida una solución temprana para optimizar el esfuerzo computacional.
-            </li>
-            <li>
-              <strong className="font-semibold text-plum-900">Atajos de lectura.</strong>{" "}
-              Priorizar información fácilmente accesible frente a la verificación exhaustiva.
-            </li>
-            <li>
-              <strong className="font-semibold text-plum-900">Fatiga de supervisión.</strong>{" "}
-              Aceptar por defecto las propuestas de un sistema por reducción de esfuerzo
-              cognitivo.
-            </li>
-          </ul>
-        </div>
       </div>
 
       <div className="mt-16 border-t border-plum-100 pt-12">
