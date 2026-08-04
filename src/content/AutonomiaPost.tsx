@@ -107,34 +107,15 @@ export function AutonomiaPost() {
           Para calibrar la autonomía del asistente, la interacción se filtra en dos niveles
           consecutivos.
         </p>
-        <div className="rounded-2xl bg-plum-50 p-8">
-          <p className="mb-4 font-semibold text-plum-900">
-            ¿La tarea requiere juicio interpretativo o autoral?
-          </p>
-          <ul className="space-y-3 text-base">
-            <li>
-              <strong className="font-semibold text-plum-900">Sí:</strong> capa 1, filtro autoral.
-              Detenerse y ofrecer despiece.
-            </li>
-            <li>
-              <strong className="font-semibold text-plum-900">No:</strong> capa 2, matriz de
-              Horvitz. Evaluar incertidumbre y coste de error.
-            </li>
-          </ul>
-          <div className="pl-1 pt-1 text-plum-600">↓</div>
-          <ul className="mt-1 space-y-2 pl-6 text-plum-900/70">
-            <li>
-              Incertidumbre baja y coste bajo <span className="text-plum-600">→</span> actuar.
-            </li>
-            <li>
-              Solo una de las dos es alta <span className="text-plum-600">→</span> actuar y
-              declarar.
-            </li>
-            <li>
-              Incertidumbre alta y coste alto <span className="text-plum-600">→</span> detenerse y
-              preguntar.
-            </li>
-          </ul>
+        <div className="overflow-x-auto rounded-2xl bg-plum-50 p-8">
+          <pre className="font-mono text-sm leading-loose text-plum-900/80">
+            {`¿La tarea requiere juicio interpretativo o autoral?
+ ├── SÍ  ──► Capa 1: filtro autoral (detenerse y ofrecer despiece)
+ └── NO  ──► Capa 2: matriz de Horvitz (incertidumbre + coste)
+              ├── Incertidumbre baja + coste bajo   ──► Actuar
+              ├── Solo una de las dos es alta       ──► Actuar y declarar
+              └── Incertidumbre alta + coste alto   ──► Detenerse y preguntar`}
+          </pre>
         </div>
         <p>
           <strong className="font-semibold text-plum-900">Capa 1: el filtro autoral.</strong> El
