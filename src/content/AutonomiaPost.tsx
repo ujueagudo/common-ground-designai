@@ -125,9 +125,10 @@ export function AutonomiaPost() {
             {`¿La tarea requiere juicio interpretativo o autoral?
  ├── SÍ  ──► Capa 1: filtro autoral (detenerse y ofrecer despiece)
  └── NO  ──► Capa 2: matriz de Horvitz (incertidumbre + coste)
-              ├── Incertidumbre baja + coste bajo   ──► Actuar
-              ├── Solo una de las dos es alta       ──► Valorar el control: actuar y declarar, o detenerse y preguntar
-              └── Incertidumbre alta + coste alto   ──► Detenerse y preguntar`}
+              ├── Incertidumbre baja + coste bajo ──► Actuar
+              ├── Solo una de las dos es alta ──► Valorar el control:
+              │     actuar y declarar, o detenerse y preguntar
+              └── Incertidumbre alta + coste alto ──► Detenerse y preguntar`}
           </pre>
         </div>
         <p>
