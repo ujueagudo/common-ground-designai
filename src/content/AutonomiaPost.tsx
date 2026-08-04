@@ -113,7 +113,7 @@ export function AutonomiaPost() {
  ├── SÍ  ──► Capa 1: filtro autoral (detenerse y ofrecer despiece)
  └── NO  ──► Capa 2: matriz de Horvitz (incertidumbre + coste)
               ├── Incertidumbre baja + coste bajo   ──► Actuar
-              ├── Solo una de las dos es alta       ──► Actuar y declarar
+              ├── Solo una de las dos es alta       ──► Valorar el control: actuar y declarar, o detenerse y preguntar
               └── Incertidumbre alta + coste alto   ──► Detenerse y preguntar`}
           </pre>
         </div>
@@ -172,7 +172,9 @@ export function AutonomiaPost() {
             </li>
             <li className="flex gap-3">
               <span className="text-plum-600">●</span> Incertidumbre alta o coste de error alto
-              (solo una): actuar, pero declarar explícitamente qué se ha decidido y por qué.
+              (solo una): valorar qué nivel de control conviene y elegir entre actuar
+              (declarando explícitamente qué se ha decidido y por qué) o detenerse a pedir
+              confirmación.
             </li>
             <li className="flex gap-3">
               <span className="text-plum-600">●</span> Incertidumbre alta y coste de error alto:
