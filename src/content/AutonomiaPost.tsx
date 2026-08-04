@@ -4,8 +4,8 @@ export function AutonomiaPost() {
   return (
     <>
       {/* Lead hook */}
-      <div className="mb-8 border-l-4 border-plum-900 pl-5 md:pl-6">
-        <p className="text-xl font-semibold leading-relaxed text-plum-900 md:text-2xl">
+      <div className="mb-8 border-l-4 border-plum-600 pl-5 md:pl-6">
+        <p className="text-xl font-medium leading-relaxed text-plum-900/70 md:text-2xl">
           Tienes que preparar una presentación para un cliente. En el proceso habitual,
           hubieses pensado activamente cada frase y decidido qué datos destacar y cuáles
           descartar. Como ahora tienes IA, decides delegarle la tarea. Y sin ser consciente, tu
