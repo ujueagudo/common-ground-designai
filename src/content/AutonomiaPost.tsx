@@ -181,12 +181,35 @@ export function AutonomiaPost() {
               detenerse y solicitar confirmación antes de ejecutar.
             </li>
           </ul>
-          <p className="mt-8 leading-relaxed opacity-90">
-            <strong className="font-semibold text-cream">Recalibración dinámica:</strong> si el
-            usuario aprueba reiteradamente un tipo de decisión sin correcciones, se reduce la
-            necesidad de consultar en ese terreno. Si el usuario corrige una decisión, se eleva el
-            umbral de supervisión de inmediato.
+          <p className="mb-2 mt-8 text-sm font-bold uppercase tracking-wide text-cream/70">
+            3. Recalibración dinámica (con excepciones)
           </p>
+          <ul className="space-y-4 text-sm font-medium">
+            <li className="flex gap-3">
+              <span className="text-plum-600">●</span> Si el usuario aprueba reiteradamente un
+              tipo de decisión mecánica sin correcciones, se puede reducir la necesidad de
+              consultar en ese terreno concreto.
+            </li>
+            <li className="flex gap-3">
+              <span className="text-plum-600">●</span> Si el usuario corrige una decisión, se
+              eleva el umbral de supervisión de inmediato, en ese terreno y en los adyacentes.
+            </li>
+          </ul>
+          <p className="mb-2 mt-6 text-sm font-bold uppercase tracking-wide text-cream/70">
+            Sin excepción, no recalibrable por historial de aprobaciones
+          </p>
+          <ul className="space-y-4 text-sm font-medium">
+            <li className="flex gap-3">
+              <span className="text-plum-600">●</span> Coste económico o de recursos (poner en
+              marcha procesos, herramientas o tareas que tengan un coste asociado): preguntar
+              siempre.
+            </li>
+            <li className="flex gap-3">
+              <span className="text-plum-600">●</span> Cambio de contexto o proyecto dentro de la
+              misma conversación: parar y confirmar antes de pasar de uno a otro, aunque cada
+              acción sea reversible.
+            </li>
+          </ul>
         </div>
       </div>
 
