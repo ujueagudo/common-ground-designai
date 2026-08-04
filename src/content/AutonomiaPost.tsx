@@ -49,32 +49,29 @@ export function AutonomiaPost() {
             ¿La tarea requiere juicio interpretativo o autoral?
           </p>
           <ul className="space-y-3 text-base">
-            <li className="flex gap-3">
-              <span className="font-semibold text-plum-600">Sí →</span>
-              <span>filtro autoral. Detenerse y ofrecer despiece.</span>
+            <li>
+              <strong className="font-semibold text-plum-900">Sí:</strong> filtro autoral.
+              Detenerse y ofrecer despiece.
             </li>
-            <li className="flex gap-3">
-              <span className="font-semibold text-plum-600">No →</span>
-              <span>evaluar incertidumbre y coste de error.</span>
+            <li>
+              <strong className="font-semibold text-plum-900">No:</strong> evaluar incertidumbre y
+              coste de error.
             </li>
           </ul>
-          <div className="mt-3 flex gap-3 pl-1">
-            <span className="text-plum-600">↓</span>
-            <ul className="flex-1 space-y-2 text-plum-900/70">
-              <li className="flex gap-3">
-                <span className="shrink-0 text-plum-600">→</span> Incertidumbre baja y coste bajo:
-                actuar.
-              </li>
-              <li className="flex gap-3">
-                <span className="shrink-0 text-plum-600">→</span> Solo una de las dos es alta:
-                actuar y declarar.
-              </li>
-              <li className="flex gap-3">
-                <span className="shrink-0 text-plum-600">→</span> Incertidumbre alta y coste alto:
-                preguntar antes.
-              </li>
-            </ul>
-          </div>
+          <div className="pl-1 pt-1 text-plum-600">↓</div>
+          <ul className="mt-1 space-y-2 pl-6 text-plum-900/70">
+            <li>
+              Incertidumbre baja y coste bajo <span className="text-plum-600">→</span> actuar.
+            </li>
+            <li>
+              Solo una de las dos es alta <span className="text-plum-600">→</span> actuar y
+              declarar.
+            </li>
+            <li>
+              Incertidumbre alta y coste alto <span className="text-plum-600">→</span> preguntar
+              antes.
+            </li>
+          </ul>
         </div>
         <p>
           <strong className="font-semibold text-plum-900">1. Filtro autoral.</strong> El trabajo
