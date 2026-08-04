@@ -3,16 +3,9 @@ import ilustracionAutoridad from "@/assets/principio-autoridad.jpg";
 export function AutonomiaPost() {
   return (
     <>
-      <img
-        src={ilustracionAutoridad}
-        alt="Una balanza con una mano humana en un platillo y un chip en el otro"
-        width={1024}
-        height={768}
-        className="mb-12 aspect-[4/3] w-full rounded-3xl object-cover"
-      />
-
-      <div className="space-y-6 text-lg leading-relaxed text-plum-900/80">
-        <p>
+      {/* Lead hook */}
+      <div className="mb-8 border-l-4 border-plum-900 pl-5 md:pl-6">
+        <p className="text-xl font-semibold leading-relaxed text-plum-900 md:text-2xl">
           Tienes que preparar una presentación para un cliente. En el proceso habitual,
           hubieses pensado activamente cada frase y decidido qué datos destacar y cuáles
           descartar. Como ahora tienes IA, decides delegarle la tarea. Y sin ser consciente, tu
@@ -21,6 +14,17 @@ export function AutonomiaPost() {
           pregunta que no sabes responder y descubres que has perdido el control sobre tu
           propio razonamiento.
         </p>
+      </div>
+
+      <img
+        src={ilustracionAutoridad}
+        alt="Una balanza con una mano humana en un platillo y un chip en el otro"
+        width={1024}
+        height={768}
+        className="mb-12 aspect-[16/9] w-full rounded-3xl object-cover"
+      />
+
+      <div className="space-y-6 text-lg leading-relaxed text-plum-900/80">
 
         <h2 className="pt-8 font-display text-2xl font-extrabold text-plum-900">
           El principio
