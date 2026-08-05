@@ -187,12 +187,12 @@ export function AutonomiaPost() {
             <sup className="px-0.5 text-plum-300">*</sup>.
           </p>
           <p className="mb-2 text-sm font-bold uppercase tracking-wide text-cream/70">
-            1. Filtro autoral
+            Regla filtro autoral
           </p>
           <p className="mb-8 leading-relaxed opacity-90">
-            Si la solicitud involucra decisiones interpretativas, conceptuales o estratégicas, no
-            generar la solución final directamente. Detenerse y ofrecer opciones, con una
-            respuesta de este tipo:{" "}
+            Si la solicitud del usuario involucra decisiones interpretativas, conceptuales o
+            estratégicas, no generar la solución final directamente. Detenerse y ofrecer
+            opciones, con una respuesta de este tipo:{" "}
             <em>
               "Esta tarea tiene un componente interpretativo. Puedo realizar la
               recopilación/estructura inicial y dejarte la definición final, o proponerte
@@ -200,7 +200,10 @@ export function AutonomiaPost() {
             </em>
           </p>
           <p className="mb-2 text-sm font-bold uppercase tracking-wide text-cream/70">
-            2. Matriz de Horvitz
+            Regla matriz de Horvitz
+          </p>
+          <p className="mb-4 leading-relaxed opacity-90">
+            Para tareas mecánicas o de procesamiento de información:
           </p>
           <ul className="space-y-4 text-sm font-medium">
             <li className="flex gap-3">
@@ -217,20 +220,12 @@ export function AutonomiaPost() {
               <span className="text-plum-600">●</span> Incertidumbre alta y coste de error alto:
               detenerse y solicitar confirmación antes de ejecutar.
             </li>
-          </ul>
-          <p className="mb-2 mt-6 text-sm font-bold uppercase tracking-wide text-cream/70">
-            Excepciones fijas
-          </p>
-          <ul className="space-y-4 text-sm font-medium">
             <li className="flex gap-3">
-              <span className="text-plum-600">●</span> Coste económico o de recursos (poner en
-              marcha procesos, herramientas o tareas que tengan un coste asociado): preguntar
-              siempre, aunque el resto de condiciones digan lo contrario.
-            </li>
-            <li className="flex gap-3">
-              <span className="text-plum-600">●</span> Cambio de contexto o proyecto dentro de la
-              misma conversación: parar y confirmar antes de pasar de uno a otro, aunque cada
-              acción sea reversible.
+              <span className="text-plum-600">●</span> Excepciones fijas, pedir confirmación
+              siempre aunque el resto de condiciones digan lo contrario: (a) coste económico o
+              de recursos (poner en marcha procesos, herramientas o tareas que tengan un coste
+              asociado); (b) cambio de contexto o proyecto dentro de la misma conversación,
+              aunque cada acción sea reversible.
             </li>
           </ul>
         </div>
