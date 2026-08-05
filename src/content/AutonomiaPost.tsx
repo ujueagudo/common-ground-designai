@@ -1,6 +1,35 @@
+import { useState } from "react";
+import { Check, Copy } from "lucide-react";
 import ilustracionAutoridad from "@/assets/principio-autoridad.jpg";
 
+const RULE_TEXT = `### REGLA DE AUTONOMÍA Y DELEGACIÓN
+
+REGLA FILTRO AUTORAL:
+Si la solicitud del usuario involucra decisiones interpretativas, conceptuales o estratégicas, NO generes la solución final directamente. Detente y ofrece opciones, con una respuesta de este tipo:
+- "Esta tarea tiene un componente interpretativo. Puedo realizar la recopilación/estructura inicial y dejarte la definición final, o proponerte preguntas para desarrollarla juntos."
+
+REGLA MATRIZ DE HORVITZ:
+Para tareas mecánicas o de procesamiento de información:
+- Incertidumbre BAJA y Coste de error BAJO: Actúa sin preguntar.
+- Incertidumbre ALTA o Coste de error ALTO (solo una): Valora qué nivel de control conviene y elige entre actuar (declarando explícitamente en la respuesta qué has decidido y por qué) o detenerte a pedir confirmación.
+- Incertidumbre ALTA y Coste de error ALTO: Detente. Solicita confirmación antes de ejecutar.
+- Excepciones fijas, pedir confirmación siempre aunque el resto de condiciones digan lo contrario:
+  (a) coste económico o de recursos (poner en marcha procesos, herramientas o tareas que tengan un coste asociado).
+  (b) cambio de contexto o proyecto dentro de la misma conversación, aunque cada acción sea reversible.`;
+
 export function AutonomiaPost() {
+  const [copied, setCopied] = useState(false);
+
+  const handleCopyRule = async () => {
+    try {
+      await navigator.clipboard.writeText(RULE_TEXT);
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2000);
+    } catch {
+      // Clipboard API no disponible o bloqueada por el navegador: fallar en silencio.
+    }
+  };
+
   return (
     <>
       {/* Lead hook */}
@@ -177,15 +206,37 @@ export function AutonomiaPost() {
           skill para ponerte a prueba al terminar dicha colaboración.
         </p>
 
+        <h3 className="pt-2 font-display text-lg font-bold text-plum-900">
+          Regla para el System Prompt
+          <sup className="px-0.5 text-plum-600">*</sup>
+        </h3>
+        <p>
+          Para aplicar las dos capas en tus propias conversaciones con un LLM, puedes introducir
+          estas dos reglas en sus instrucciones. Para ello, solo tienes que copiar este bloque en
+          sus instrucciones de sistema:
+        </p>
+
         {/* La regla */}
-        <div className="my-16 rounded-3xl bg-plum-900 p-10 text-cream shadow-2xl">
-          <h2 className="mb-6 font-display text-xl font-extrabold uppercase tracking-tight">
-            Regla para el System Prompt
-          </h2>
-          <p className="mb-8 leading-relaxed opacity-90">
-            Copiar en las instrucciones del asistente
-            <sup className="px-0.5 text-plum-300">*</sup>.
-          </p>
+        <div className="my-8 rounded-3xl bg-plum-900 p-10 text-cream shadow-2xl">
+          <div className="mb-6 flex justify-end">
+            <button
+              type="button"
+              onClick={handleCopyRule}
+              className="flex items-center gap-2 rounded-full border border-cream/20 px-4 py-2 text-xs font-medium text-cream/80 transition-colors hover:border-cream/40 hover:text-cream"
+            >
+              {copied ? (
+                <>
+                  <Check className="h-3.5 w-3.5" />
+                  Copiado
+                </>
+              ) : (
+                <>
+                  <Copy className="h-3.5 w-3.5" />
+                  Copiar regla
+                </>
+              )}
+            </button>
+          </div>
           <p className="mb-2 text-sm font-bold uppercase tracking-wide text-cream/70">
             Regla filtro autoral
           </p>
