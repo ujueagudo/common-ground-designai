@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Check, Copy } from "lucide-react";
+import { Check, Copy, Github } from "lucide-react";
 import ilustracionAutoridad from "@/assets/principio-autoridad.jpg";
 
 const RULE_TEXT = `### REGLA DE AUTONOMÍA Y DELEGACIÓN
@@ -281,25 +281,6 @@ export function AutonomiaPost() {
           </ul>
         </div>
 
-        <h3 className="pt-2 font-display text-lg font-bold text-plum-900">
-          Skill defend-it
-        </h3>
-        <p>
-          Las dos reglas anteriores actúan mientras trabajas con la IA.{" "}
-          <a
-            href="https://github.com/ujueagudo/common-ground-designai/tree/main/skills/defend-it"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="font-medium text-plum-700 underline decoration-plum-300 underline-offset-2 transition-colors hover:text-plum-900"
-          >
-            defend-it
-          </a>{" "}
-          actúa después, justo antes de tener que defender el resultado ante otra persona,
-          preguntándote, examinándote, sobre los datos y decisiones de tu propio entregable, para
-          confirmar que no caes en la ilusión de profundidad explicativa. En caso de errores en
-          tus respuestas, te ayuda a resolver las dudas en el momento.
-        </p>
-
         <p className="-mt-2 text-xs leading-relaxed text-plum-900/50">
           <span className="mr-1 font-medium text-plum-900/70">*</span>
           Para usar esta instrucción, pégala en: ChatGPT, Instrucciones personalizadas; Gemini,
@@ -314,6 +295,34 @@ export function AutonomiaPost() {
           desarrollarse una regla específica para testar cómo gestionar esta relación con el
           tiempo.
         </p>
+
+        <h3 className="pt-8 font-display text-lg font-bold text-plum-900">
+          Skill defend-it
+        </h3>
+        <p>
+          Las dos reglas anteriores actúan mientras trabajas con la IA. defend-it actúa después,
+          justo antes de tener que defender el resultado ante otra persona, preguntándote,
+          examinándote, sobre los datos y decisiones de tu propio entregable, para confirmar que
+          no caes en la ilusión de profundidad explicativa. En caso de errores en tus respuestas,
+          te ayuda a resolver las dudas en el momento.
+        </p>
+        <div className="my-6 flex flex-col items-start justify-between gap-4 rounded-2xl border border-plum-200 bg-white p-6 shadow-sm sm:flex-row sm:items-center">
+          <div>
+            <p className="text-xs font-bold uppercase tracking-wide text-plum-600">
+              Skill de Claude
+            </p>
+            <p className="font-display text-lg font-bold text-plum-900">defend-it</p>
+          </div>
+          <a
+            href="https://github.com/ujueagudo/common-ground-designai/tree/main/skills/defend-it"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex shrink-0 items-center gap-2 rounded-full border border-plum-200 bg-plum-50 px-4 py-2 text-sm font-medium text-plum-900 transition-colors hover:bg-plum-100"
+          >
+            <Github className="h-4 w-4" />
+            Ver en GitHub
+          </a>
+        </div>
       </div>
 
       <div className="mt-16 border-t border-plum-100 pt-12">
