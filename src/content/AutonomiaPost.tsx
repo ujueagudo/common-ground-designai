@@ -5,15 +5,14 @@ import ilustracionAutoridad from "@/assets/principio-autoridad.jpg";
 const RULE_TEXT = `### REGLA DE AUTONOMÍA Y DELEGACIÓN
 
 REGLA FILTRO AUTORAL:
-Si la solicitud del usuario involucra decisiones interpretativas, conceptuales o estratégicas, NO generes la solución final directamente. Detente y ofrece opciones, con una respuesta de este tipo:
-- "Esta tarea tiene un componente interpretativo. Puedo realizar la recopilación/estructura inicial y dejarte la definición final, o proponerte preguntas para desarrollarla juntos."
+Si la solicitud del usuario involucra decisiones interpretativas, conceptuales o estratégicas, NO generes la solución final directamente. Detente y ofrece opciones.
 
 REGLA MATRIZ DE HORVITZ:
 Para tareas mecánicas o de procesamiento de información:
-- Cómo evaluar el Coste de error: considera ALTO si el impacto del fallo es grave o si es difícil de deshacer (basta que uno de los dos sea alto). Solo es BAJO si el fallo es leve Y fácilmente reversible.
 - Incertidumbre BAJA y Coste de error BAJO: Actúa sin preguntar.
 - Incertidumbre ALTA o Coste de error ALTO (solo una): Valora qué nivel de control conviene y elige entre actuar (declarando explícitamente en la respuesta qué has decidido y por qué) o detenerte a pedir confirmación.
 - Incertidumbre ALTA y Coste de error ALTO: Detente. Solicita confirmación antes de ejecutar.
+- Cómo evaluar el Coste de error: considera ALTO si el impacto del fallo es grave o si es difícil de deshacer (basta que uno de los dos sea alto). Solo es BAJO si el fallo es leve Y fácilmente reversible.
 - Excepciones fijas, pedir confirmación siempre aunque el resto de condiciones digan lo contrario:
   (a) coste económico o de recursos (poner en marcha procesos, herramientas o tareas que tengan un coste asociado).
   (b) cambio de contexto o proyecto dentro de la misma conversación, aunque cada acción sea reversible.`;
@@ -87,46 +86,59 @@ export function AutonomiaPost() {
           supervisión.
         </p>
         <p>
-          <strong className="font-semibold text-plum-900">1. Los sesgos de la IA.</strong>
+          <strong className="font-semibold text-plum-900">1. Los sesgos de la IA</strong>
         </p>
         <div className="rounded-2xl bg-plum-50 p-8">
           <ul className="space-y-3 text-base">
-            <li>
-              <strong className="font-semibold text-plum-900">
-                Sesgo de sobreejecución (bias towards action):
-              </strong>{" "}
-              la IA tiende a entregar el trabajo terminado de inmediato ante cualquier instrucción
-              ambigua, en lugar de preguntar si solo se buscaba aportarle contexto.
+            <li className="flex gap-3">
+              <span className="text-plum-600">●</span>
+              <span>
+                <strong className="font-semibold text-plum-900">
+                  Sesgo de sobreejecución (bias towards action):
+                </strong>{" "}
+                la IA tiende a entregar el trabajo terminado de inmediato ante cualquier
+                instrucción ambigua, en lugar de preguntar si solo se buscaba aportarle contexto.
+              </span>
             </li>
-            <li>
-              <strong className="font-semibold text-plum-900">Atajos de lectura:</strong> tiende a
-              apoyarse en su memoria de entrenamiento o en la información más accesible antes que
-              verificar de forma exhaustiva los datos del contexto. Si esto ocurre sin declararlo,
-              puede derivar en una falta de control del humano sobre la tarea sin ser consciente
-              de ello.
+            <li className="flex gap-3">
+              <span className="text-plum-600">●</span>
+              <span>
+                <strong className="font-semibold text-plum-900">Atajos de lectura:</strong> tiende
+                a apoyarse en su memoria de entrenamiento o en la información más accesible antes
+                que verificar de forma exhaustiva los datos del contexto. Si esto ocurre sin
+                declararlo, puede derivar en una falta de control del humano sobre la tarea sin
+                ser consciente de ello.
+              </span>
             </li>
           </ul>
         </div>
         <p>
-          <strong className="font-semibold text-plum-900">2. Los sesgos humanos.</strong>
+          <strong className="font-semibold text-plum-900">2. Los sesgos humanos</strong>
         </p>
         <div className="rounded-2xl bg-plum-50 p-8">
           <ul className="space-y-3 text-base">
-            <li>
-              <strong className="font-semibold text-plum-900">Sesgo de automatización:</strong>{" "}
-              tendemos a aceptar por defecto lo que el sistema propone por pura economía
-              cognitiva
-              <sup className="px-0.5 text-plum-600">1</sup>. Tener la posibilidad de corregir a la
-              IA no significa que vayamos a ejercer esa corrección de verdad. Saber que deberíamos
-              aplicar pensamiento crítico y revisar no implica que vayamos a hacerlo siempre.
+            <li className="flex gap-3">
+              <span className="text-plum-600">●</span>
+              <span>
+                <strong className="font-semibold text-plum-900">Sesgo de automatización:</strong>{" "}
+                tendemos a aceptar por defecto lo que el sistema propone por pura economía
+                cognitiva
+                <sup className="px-0.5 text-plum-600">1</sup>. Tener la posibilidad de corregir a
+                la IA no significa que vayamos a ejercer esa corrección de verdad. Saber que
+                deberíamos aplicar pensamiento crítico y revisar no implica que vayamos a hacerlo
+                siempre.
+              </span>
             </li>
-            <li>
-              <strong className="font-semibold text-plum-900">Fatiga de vigilancia:</strong> los
-              humanos tenemos serias dificultades para mantener una vigilancia sostenida, un
-              hallazgo asentado en psicología desde hace décadas
-              <sup className="px-0.5 text-plum-600">2</sup>. Asegurarse de que la IA no está
-              tomando decisiones inadecuadas dentro de un proceso continuo (aunque estas se
-              declaren) resulta difícil de detectar.
+            <li className="flex gap-3">
+              <span className="text-plum-600">●</span>
+              <span>
+                <strong className="font-semibold text-plum-900">Fatiga de vigilancia:</strong> los
+                humanos tenemos serias dificultades para mantener una vigilancia sostenida, un
+                hallazgo asentado en psicología desde hace décadas
+                <sup className="px-0.5 text-plum-600">2</sup>. Asegurarse de que la IA no está
+                tomando decisiones inadecuadas dentro de un proceso continuo (aunque estas se
+                declaren) resulta difícil de detectar.
+              </span>
             </li>
           </ul>
         </div>
@@ -162,7 +174,7 @@ export function AutonomiaPost() {
  ├── SÍ  ──► Capa 1: filtro autoral
  └── NO  ──► Capa 2: matriz de Horvitz (incertidumbre + coste)
               ├── Incertidumbre baja + coste bajo ──► Actuar
-              ├── Solo una de las dos es alta ──► Valorar: actuar y declarar, o preguntar
+              ├── Solo una es alta ──► Valorar: declarar o preguntar
               └── Incertidumbre alta + coste alto ──► Preguntar`}
           </pre>
         </div>
@@ -193,8 +205,10 @@ export function AutonomiaPost() {
           </ul>
         </div>
         <p>
-          A su vez, el coste de error combina dos dimensiones distintas: el impacto del fallo
-          (gravedad) y su reversibilidad (facilidad para deshacerlo). Estas dos dimensiones no
+          A su vez, hay que tener en cuenta que el{" "}
+          <strong className="font-semibold text-plum-900">coste de error</strong> combina dos
+          dimensiones distintas: el impacto del fallo (gravedad) y su reversibilidad (facilidad
+          para deshacerlo). Estas dos dimensiones no
           siempre coinciden (un fallo puede ser grave pero reversible, o leve pero irreversible),
           así que basta con que una de las dos sea alta para que el coste de error se considere
           alto: solo es bajo cuando el fallo es leve y fácilmente reversible a la vez.
@@ -251,12 +265,7 @@ export function AutonomiaPost() {
           <p className="mb-8 leading-relaxed opacity-90">
             Si la solicitud del usuario involucra decisiones interpretativas, conceptuales o
             estratégicas, no generar la solución final directamente. Detenerse y ofrecer
-            opciones, con una respuesta de este tipo:{" "}
-            <em>
-              "Esta tarea tiene un componente interpretativo. Puedo realizar la
-              recopilación/estructura inicial y dejarte la definición final, o proponerte
-              preguntas para desarrollarla juntos."
-            </em>
+            opciones.
           </p>
           <p className="mb-2 text-sm font-bold uppercase tracking-wide text-cream/70">
             Regla matriz de Horvitz
@@ -265,11 +274,6 @@ export function AutonomiaPost() {
             Para tareas mecánicas o de procesamiento de información:
           </p>
           <ul className="space-y-4 text-sm font-medium">
-            <li className="flex gap-3">
-              <span className="text-plum-600">●</span> Cómo evaluar el coste de error: alto si el
-              impacto del fallo es grave o es difícil de deshacer (basta que uno de los dos sea
-              alto); bajo solo si el fallo es leve y fácilmente reversible a la vez.
-            </li>
             <li className="flex gap-3">
               <span className="text-plum-600">●</span> Incertidumbre baja y coste de error bajo:
               actuar sin preguntar.
@@ -283,6 +287,11 @@ export function AutonomiaPost() {
             <li className="flex gap-3">
               <span className="text-plum-600">●</span> Incertidumbre alta y coste de error alto:
               detenerse y solicitar confirmación antes de ejecutar.
+            </li>
+            <li className="flex gap-3">
+              <span className="text-plum-600">●</span> Cómo evaluar el coste de error: alto si el
+              impacto del fallo es grave o es difícil de deshacer (basta que uno de los dos sea
+              alto); bajo solo si el fallo es leve y fácilmente reversible a la vez.
             </li>
             <li className="flex gap-3">
               <span className="text-plum-600">●</span> Excepciones fijas, pedir confirmación
@@ -313,7 +322,8 @@ export function AutonomiaPost() {
           Skill defend-it
         </h3>
         <p>
-          Las dos reglas anteriores actúan mientras trabajas con la IA. defend-it actúa después,
+          Las dos reglas anteriores actúan mientras trabajas con la IA. La skill defend-it actúa
+          después,
           justo antes de tener que defender el resultado ante otra persona, preguntándote,
           examinándote, sobre los datos y decisiones de tu propio entregable, para confirmar que
           no caes en la ilusión de profundidad explicativa. En caso de errores en tus respuestas,
