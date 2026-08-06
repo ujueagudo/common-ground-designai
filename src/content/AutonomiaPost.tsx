@@ -10,6 +10,7 @@ Si la solicitud del usuario involucra decisiones interpretativas, conceptuales o
 
 REGLA MATRIZ DE HORVITZ:
 Para tareas mecánicas o de procesamiento de información:
+- Cómo evaluar el Coste de error: considera ALTO si el impacto del fallo es grave o si es difícil de deshacer (basta que uno de los dos sea alto). Solo es BAJO si el fallo es leve Y fácilmente reversible.
 - Incertidumbre BAJA y Coste de error BAJO: Actúa sin preguntar.
 - Incertidumbre ALTA o Coste de error ALTO (solo una): Valora qué nivel de control conviene y elige entre actuar (declarando explícitamente en la respuesta qué has decidido y por qué) o detenerte a pedir confirmación.
 - Incertidumbre ALTA y Coste de error ALTO: Detente. Solicita confirmación antes de ejecutar.
@@ -192,6 +193,13 @@ export function AutonomiaPost() {
           </ul>
         </div>
         <p>
+          A su vez, el coste de error combina dos dimensiones distintas: el impacto del fallo
+          (gravedad) y su reversibilidad (facilidad para deshacerlo). Estas dos dimensiones no
+          siempre coinciden (un fallo puede ser grave pero reversible, o leve pero irreversible),
+          así que basta con que una de las dos sea alta para que el coste de error se considere
+          alto: solo es bajo cuando el fallo es leve y fácilmente reversible a la vez.
+        </p>
+        <p>
           Cuando ambas variables son bajas, la IA puede actuar sin preguntar. Si una de las dos es
           alta, conviene valorar qué nivel de control corresponde a la IA: actuar declarando la
           decisión, o detenerse a confirmar. Si las dos son altas, la directriz es detenerse y
@@ -257,6 +265,11 @@ export function AutonomiaPost() {
             Para tareas mecánicas o de procesamiento de información:
           </p>
           <ul className="space-y-4 text-sm font-medium">
+            <li className="flex gap-3">
+              <span className="text-plum-600">●</span> Cómo evaluar el coste de error: alto si el
+              impacto del fallo es grave o es difícil de deshacer (basta que uno de los dos sea
+              alto); bajo solo si el fallo es leve y fácilmente reversible a la vez.
+            </li>
             <li className="flex gap-3">
               <span className="text-plum-600">●</span> Incertidumbre baja y coste de error bajo:
               actuar sin preguntar.
