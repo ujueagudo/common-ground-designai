@@ -363,7 +363,7 @@ export function AutonomiaPost() {
               rel="noopener noreferrer"
               className="text-plum-700 underline hover:text-plum-900"
             >
-              DOI
+              https://doi.org/10.1518/001872097778543886
             </a>
           </li>
           <li>
@@ -376,7 +376,7 @@ export function AutonomiaPost() {
               rel="noopener noreferrer"
               className="text-plum-700 underline hover:text-plum-900"
             >
-              DOI
+              https://doi.org/10.1080/17470214808416738
             </a>
           </li>
           <li>
@@ -389,7 +389,7 @@ export function AutonomiaPost() {
               rel="noopener noreferrer"
               className="text-plum-700 underline hover:text-plum-900"
             >
-              DOI
+              https://doi.org/10.1207/s15516709cog2605_1
             </a>
           </li>
           <li>
@@ -402,7 +402,7 @@ export function AutonomiaPost() {
               rel="noopener noreferrer"
               className="text-plum-700 underline hover:text-plum-900"
             >
-              DOI
+              https://doi.org/10.1145/3715275.3732157
             </a>
           </li>
           <li>
@@ -415,7 +415,7 @@ export function AutonomiaPost() {
               rel="noopener noreferrer"
               className="text-plum-700 underline hover:text-plum-900"
             >
-              DOI
+              https://doi.org/10.1145/302979.303030
             </a>
           </li>
         </ol>
