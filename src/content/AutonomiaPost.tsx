@@ -356,27 +356,67 @@ export function AutonomiaPost() {
           <li>
             <span className="mr-2 font-medium text-plum-900">[1]</span> Parasuraman, R., & Riley,
             V. (1997). Humans and Automation: Use, Misuse, Disuse, Abuse. Human Factors, 39(2),
-            230-253.
+            230-253.{" "}
+            <a
+              href="https://doi.org/10.1518/001872097778543886"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-plum-700 underline hover:text-plum-900"
+            >
+              DOI
+            </a>
           </li>
           <li>
             <span className="mr-2 font-medium text-plum-900">[2]</span> Mackworth, N. H. (1948).
             The breakdown of vigilance during prolonged visual search. Quarterly Journal of
-            Experimental Psychology, 1, 6-21.
+            Experimental Psychology, 1, 6-21.{" "}
+            <a
+              href="https://doi.org/10.1080/17470214808416738"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-plum-700 underline hover:text-plum-900"
+            >
+              DOI
+            </a>
           </li>
           <li>
             <span className="mr-2 font-medium text-plum-900">[3]</span> Rozenblit, L., & Keil, F.
             (2002). The misunderstood limits of folk science: An illusion of explanatory depth.
-            Cognitive Science, 26(5), 521-562.
+            Cognitive Science, 26(5), 521-562.{" "}
+            <a
+              href="https://doi.org/10.1207/s15516709cog2605_1"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-plum-700 underline hover:text-plum-900"
+            >
+              DOI
+            </a>
           </li>
           <li>
             <span className="mr-2 font-medium text-plum-900">[4]</span> Verhagen, R. S., Neerincx,
             M. A., & Tielman, M. L. (2025). Agent Allocation of Moral Decisions in Human-Agent
-            Teams. Proceedings of FAccT '25, 2302-2317.
+            Teams. Proceedings of FAccT '25, 2302-2317.{" "}
+            <a
+              href="https://doi.org/10.1145/3715275.3732157"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-plum-700 underline hover:text-plum-900"
+            >
+              DOI
+            </a>
           </li>
           <li>
             <span className="mr-2 font-medium text-plum-900">[5]</span> Horvitz, E. (1999).
             Principles of Mixed-Initiative User Interfaces. Proceedings of the SIGCHI Conference
-            on Human Factors in Computing Systems (CHI '99), 159-166. ACM.
+            on Human Factors in Computing Systems (CHI '99), 159-166. ACM.{" "}
+            <a
+              href="https://doi.org/10.1145/302979.303030"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-plum-700 underline hover:text-plum-900"
+            >
+              DOI
+            </a>
           </li>
         </ol>
       </div>
