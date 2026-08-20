@@ -14,7 +14,7 @@ export const notes: Note[] = [
     title: "Cómo somos los humanos y cómo es la IA cuando colaboramos",
     summary:
       "Un mapa de los sesgos que se activan a ambos lados de la mesa: los nuestros al delegar y revisar, y los de la IA al proponer y afirmar.",
-    published: true,
+    published: false,
     accent: "--color-accent-violet",
   },
 ];
