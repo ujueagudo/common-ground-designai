@@ -23,7 +23,7 @@ export function AnclajePost() {
         alt="Un ancla encadenada a un chip, con una nube de pensamiento sobre el ancla mostrando una meta distinta en una montaña"
         width={1448}
         height={1086}
-        className="mb-12 aspect-[21/9] w-full rounded-3xl object-cover"
+        className="mb-12 aspect-[4/3] w-full rounded-3xl object-cover"
       />
 
       <div className="space-y-6 text-lg leading-relaxed text-plum-900/80">
@@ -180,11 +180,6 @@ export function AnclajePost() {
           le pide explícitamente, dándote así el tiempo y la oportunidad para definir tu propia
           postura.
         </p>
-        <p>
-          Como en el truco de cartas, el proceso adecuado nunca fue pensar durante más tiempo sobre
-          la respuesta que ya se tenía delante, sino evitar que una propuesta ajena anclara la
-          propia.
-        </p>
         <div className="my-6 flex flex-col items-start justify-between gap-4 rounded-2xl border border-plum-200 bg-white p-6 shadow-sm sm:flex-row sm:items-center">
           <div>
             <p className="text-xs font-bold uppercase tracking-wide text-plum-600">
@@ -202,6 +197,11 @@ export function AnclajePost() {
             Ver en GitHub
           </a>
         </div>
+        <p>
+          Como en el truco de cartas, el proceso adecuado nunca fue pensar durante más tiempo sobre
+          la respuesta que ya se tenía delante, sino evitar que una propuesta ajena anclara la
+          propia.
+        </p>
       </div>
 
       <div className="mt-16 border-t border-plum-100 pt-12">
