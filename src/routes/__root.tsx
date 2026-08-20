@@ -152,8 +152,8 @@ function SiteFooter() {
             </span>
           </div>
           <p className="text-sm text-plum-900/60">
-            Un repositorio de investigación sobre el reparto de tareas y la búsqueda de la sinergia
-            entre diseñadores e inteligencia artificial.
+            Un repositorio vivo de reglas de interacción para articular nuestra colaboración con la
+            IA.
           </p>
         </div>
         <div className="flex gap-24">

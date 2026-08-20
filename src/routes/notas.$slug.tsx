@@ -68,7 +68,7 @@ function NotePost() {
       <Body />
 
       <footer className="mt-24 flex items-center justify-between border-t border-plum-100 pt-12 text-xs font-bold uppercase tracking-widest text-plum-600">
-        <div>Common Ground · Principios de colaboración Diseño × IA</div>
+        <div>Common Ground · Principios de colaboración Humano × IA</div>
         <Link
           to="/"
           className="rounded-full border border-plum-600 px-4 py-2 transition-colors hover:bg-plum-600 hover:text-cream"

@@ -7,13 +7,13 @@ export const Route = createFileRoute("/sobre-el-proyecto")({
       {
         name: "description",
         content:
-          "Repositorio de los principios que regulan el reparto de tareas y la búsqueda de la sinergia entre diseñadores e IA.",
+          "Un repositorio vivo de reglas de interacción para articular nuestra colaboración con la IA.",
       },
       { property: "og:title", content: "Sobre el proyecto — Common Ground" },
       {
         property: "og:description",
         content:
-          "Repositorio de los principios que regulan el reparto de tareas y la búsqueda de la sinergia entre diseñadores e IA.",
+          "Un repositorio vivo de reglas de interacción para articular nuestra colaboración con la IA.",
       },
     ],
   }),
@@ -28,8 +28,8 @@ function About() {
       </h1>
       <div className="space-y-6 text-lg leading-relaxed text-plum-900/80">
         <p>
-          Common Ground es un repositorio vivo de los principios que regulan el reparto de tareas
-          y la búsqueda de la sinergia entre diseñadores e inteligencia artificial.
+          Common Ground es un repositorio vivo de reglas de interacción para articular nuestra
+          colaboración con la IA.
         </p>
         <p>
           No es un manifiesto ni una lista de buenas intenciones. Cada principio se publica como un

@@ -7,17 +7,17 @@ import { principles } from "@/data/principles";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Common Ground — Principios de colaboración Diseño × IA" },
+      { title: "Common Ground — Principios de colaboración Humano × IA" },
       {
         name: "description",
         content:
-          "Repositorio de los principios que regulan el reparto de tareas y la búsqueda de la sinergia entre diseñadores e IA.",
+          "Un repositorio vivo de reglas de interacción para articular nuestra colaboración con la IA.",
       },
-      { property: "og:title", content: "Common Ground — Principios de colaboración Diseño × IA" },
+      { property: "og:title", content: "Common Ground — Principios de colaboración Humano × IA" },
       {
         property: "og:description",
         content:
-          "Un decálogo de la colaboración entre diseño e inteligencia artificial.",
+          "Un repositorio vivo de reglas de interacción para articular nuestra colaboración con la IA.",
       },
     ],
   }),
@@ -32,11 +32,11 @@ function Index() {
           Common Ground
         </h1>
         <p className="mb-8 max-w-2xl font-display text-2xl font-extrabold leading-tight text-plum-900 md:text-3xl">
-          Principios de colaboración Diseño × IA
+          Principios de colaboración Humano × IA
         </p>
         <p className="max-w-xl text-lg leading-relaxed text-plum-900/70">
-          Un repositorio vivo de los principios que regulan el reparto de tareas y la búsqueda de la
-          sinergia entre diseñadores e inteligencia artificial.
+          Un repositorio vivo de reglas de interacción para articular nuestra colaboración con la
+          IA.
         </p>
       </header>
 
