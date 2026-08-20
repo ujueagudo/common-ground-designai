@@ -241,7 +241,7 @@ export function AutonomiaPost() {
         </p>
 
         {/* La regla */}
-        <div className="my-8 rounded-3xl bg-plum-900 p-10 text-cream shadow-2xl">
+        <div id="regla" className="my-8 scroll-mt-24 rounded-3xl bg-plum-900 p-10 text-cream shadow-2xl">
           <div className="mb-6 flex justify-end">
             <button
               type="button"

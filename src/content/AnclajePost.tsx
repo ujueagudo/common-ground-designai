@@ -1,3 +1,4 @@
+import { Link } from "@tanstack/react-router";
 import { Github } from "lucide-react";
 import ilustracionAnclaje from "@/assets/principio-anclaje.png";
 
@@ -147,9 +148,25 @@ export function AnclajePost() {
           postura.
         </p>
         <p>
-          En la práctica, este principio se apoya en la REGLA FILTRO AUTORAL (definida en el
-          PRINCIPIO 01 - AUTONOMÍA) y se complementa con una skill diseñada específicamente para
-          evitar el anclaje en procesos de análisis y toma de decisiones.
+          En la práctica, este principio se apoya en la{" "}
+          <Link
+            to="/principios/$slug"
+            params={{ slug: "autonomia" }}
+            hash="regla"
+            className="text-plum-700 underline hover:text-plum-900"
+          >
+            REGLA FILTRO AUTORAL
+          </Link>
+          , definida en{" "}
+          <Link
+            to="/principios/$slug"
+            params={{ slug: "autonomia" }}
+            className="text-plum-700 underline hover:text-plum-900"
+          >
+            PRINCIPIO 01 - AUTONOMÍA
+          </Link>
+          , y se complementa con una skill diseñada específicamente para evitar el anclaje en
+          procesos de análisis y toma de decisiones.
         </p>
 
         <h3 className="pt-8 font-display text-lg font-bold text-plum-900">
