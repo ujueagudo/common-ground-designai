@@ -1,4 +1,5 @@
 import { Github } from "lucide-react";
+import ilustracionAnclaje from "@/assets/principio-anclaje.png";
 
 export function AnclajePost() {
   return (
@@ -15,6 +16,14 @@ export function AnclajePost() {
           que obtuviste.
         </p>
       </div>
+
+      <img
+        src={ilustracionAnclaje}
+        alt="Un ancla encadenada a un chip, con una nube de pensamiento sobre el ancla mostrando una meta distinta en una montaña"
+        width={1448}
+        height={1086}
+        className="mb-12 aspect-[21/9] w-full rounded-3xl object-cover"
+      />
 
       <div className="space-y-6 text-lg leading-relaxed text-plum-900/80">
         <p>
