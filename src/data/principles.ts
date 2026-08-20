@@ -21,12 +21,12 @@ export const principles: Principle[] = [
   },
   {
     number: "02",
-    slug: "declaracion",
-    category: "Principio 02",
-    title: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    slug: "anclaje",
+    category: "Anclaje",
+    title: "Cuándo (no) ver la respuesta de la IA antes de pensar la tuya",
     summary:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    published: false,
+      "Ver la propuesta de una IA antes de formar tu propio juicio ancla tu pensamiento a ella, incluso si es errónea. No depende de la calidad de la respuesta, sino del momento en que la recibes.",
+    published: true,
     accent: "--color-accent-violet",
   },
   {
