@@ -22,8 +22,8 @@ export function AnclajePost() {
         src={ilustracionAnclaje}
         alt="Un ancla encadenada a un chip, con una nube de pensamiento sobre el ancla mostrando una meta distinta en una montaña"
         width={1448}
-        height={1086}
-        className="mb-12 aspect-[4/3] w-full rounded-3xl object-cover"
+        height={853}
+        className="mb-12 aspect-[1448/853] w-full rounded-3xl object-cover"
       />
 
       <div className="space-y-6 text-lg leading-relaxed text-plum-900/80">

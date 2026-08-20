@@ -49,8 +49,8 @@ export function AutonomiaPost() {
         src={ilustracionAutoridad}
         alt="Una balanza con una mano humana en un platillo y un chip en el otro"
         width={1024}
-        height={768}
-        className="mb-12 aspect-[21/9] w-full rounded-3xl object-cover"
+        height={549}
+        className="mb-12 aspect-[1024/549] w-full rounded-3xl object-cover"
       />
 
       <div className="space-y-6 text-lg leading-relaxed text-plum-900/80">
