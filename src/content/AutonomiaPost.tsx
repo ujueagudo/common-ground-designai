@@ -94,10 +94,12 @@ export function AutonomiaPost() {
               <span className="text-plum-600">●</span>
               <span>
                 <strong className="font-semibold text-plum-900">
-                  Sesgo de sobreejecución (bias towards action):
+                  Sobreactuación (over-eagerness):
                 </strong>{" "}
                 la IA tiende a entregar el trabajo terminado de inmediato ante cualquier
-                instrucción ambigua, en lugar de preguntar si solo se buscaba aportarle contexto.
+                instrucción ambigua, encontrando soluciones por su cuenta en vez de pedir
+                aprobación
+                <sup className="px-0.5 text-plum-600">1</sup>.
               </span>
             </li>
             <li className="flex gap-3">
@@ -123,7 +125,7 @@ export function AutonomiaPost() {
                 <strong className="font-semibold text-plum-900">Sesgo de automatización:</strong>{" "}
                 tendemos a aceptar por defecto lo que el sistema propone por pura economía
                 cognitiva
-                <sup className="px-0.5 text-plum-600">1</sup>. Tener la posibilidad de corregir a
+                <sup className="px-0.5 text-plum-600">2</sup>. Tener la posibilidad de corregir a
                 la IA no significa que vayamos a ejercer esa corrección de verdad. Saber que
                 deberíamos aplicar pensamiento crítico y revisar no implica que vayamos a hacerlo
                 siempre.
@@ -135,7 +137,7 @@ export function AutonomiaPost() {
                 <strong className="font-semibold text-plum-900">Fatiga de vigilancia:</strong> los
                 humanos tenemos serias dificultades para mantener una vigilancia sostenida, un
                 hallazgo asentado en psicología desde hace décadas
-                <sup className="px-0.5 text-plum-600">2</sup>. Asegurarse de que la IA no está
+                <sup className="px-0.5 text-plum-600">3</sup>. Asegurarse de que la IA no está
                 tomando decisiones inadecuadas dentro de un proceso continuo (aunque estas se
                 declaren) resulta difícil de detectar.
               </span>
@@ -154,7 +156,7 @@ export function AutonomiaPost() {
           </strong>
           : la falsa sensación de que se entiende un proceso o una propuesta simplemente porque el
           resultado final es coherente y estético
-          <sup className="px-0.5 text-plum-600">3</sup>.
+          <sup className="px-0.5 text-plum-600">4</sup>.
         </p>
         <p>
           Cuando una persona no ha atravesado el proceso de decidir qué entra, qué sale y por qué,
@@ -183,14 +185,14 @@ export function AutonomiaPost() {
           trabajo no se reparte por fases ("la IA al principio, la persona al final"), sino por
           responsabilidad. Todo lo que constituya el núcleo conceptual, interpretativo o
           estratégico que la persona deba defender debe permanecer bajo su control directo
-          <sup className="px-0.5 text-plum-600">4</sup>. El resto, las tareas operativas o
+          <sup className="px-0.5 text-plum-600">5</sup>. El resto, las tareas operativas o
           mecánicas que no requieren ese juicio interpretativo, pueden ser resueltas por la IA de
           forma autónoma siguiendo el criterio de la Capa 2.
         </p>
         <p>
           <strong className="font-semibold text-plum-900">Capa 2: la matriz de Horvitz.</strong>{" "}
           Para tareas operativas o mecánicas, la autonomía se rige por dos variables formuladas
-          por Eric Horvitz en 1999<sup className="px-0.5 text-plum-600">5</sup>:
+          por Eric Horvitz en 1999<sup className="px-0.5 text-plum-600">6</sup>:
         </p>
         <div className="rounded-2xl bg-plum-50 p-8">
           <ul className="space-y-3 text-base">
@@ -354,7 +356,20 @@ export function AutonomiaPost() {
         </h2>
         <ol className="space-y-3 text-xs leading-relaxed text-plum-900/60">
           <li>
-            <span className="mr-2 font-medium text-plum-900">[1]</span> Parasuraman, R., & Riley,
+            <span className="mr-2 font-medium text-plum-900">[1]</span> Anthropic (2026).
+            Transparency Hub: Model Report, Claude Sonnet 4.6, sección "Alignment
+            Evaluations".{" "}
+            <a
+              href="https://www.anthropic.com/transparency/model-report"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-plum-700 underline hover:text-plum-900"
+            >
+              https://www.anthropic.com/transparency/model-report
+            </a>
+          </li>
+          <li>
+            <span className="mr-2 font-medium text-plum-900">[2]</span> Parasuraman, R., & Riley,
             V. (1997). Humans and Automation: Use, Misuse, Disuse, Abuse. Human Factors, 39(2),
             230-253.{" "}
             <a
@@ -367,7 +382,7 @@ export function AutonomiaPost() {
             </a>
           </li>
           <li>
-            <span className="mr-2 font-medium text-plum-900">[2]</span> Mackworth, N. H. (1948).
+            <span className="mr-2 font-medium text-plum-900">[3]</span> Mackworth, N. H. (1948).
             The breakdown of vigilance during prolonged visual search. Quarterly Journal of
             Experimental Psychology, 1, 6-21.{" "}
             <a
@@ -380,7 +395,7 @@ export function AutonomiaPost() {
             </a>
           </li>
           <li>
-            <span className="mr-2 font-medium text-plum-900">[3]</span> Rozenblit, L., & Keil, F.
+            <span className="mr-2 font-medium text-plum-900">[4]</span> Rozenblit, L., & Keil, F.
             (2002). The misunderstood limits of folk science: An illusion of explanatory depth.
             Cognitive Science, 26(5), 521-562.{" "}
             <a
@@ -393,7 +408,7 @@ export function AutonomiaPost() {
             </a>
           </li>
           <li>
-            <span className="mr-2 font-medium text-plum-900">[4]</span> Verhagen, R. S., Neerincx,
+            <span className="mr-2 font-medium text-plum-900">[5]</span> Verhagen, R. S., Neerincx,
             M. A., & Tielman, M. L. (2025). Agent Allocation of Moral Decisions in Human-Agent
             Teams. Proceedings of FAccT '25, 2302-2317.{" "}
             <a
@@ -406,7 +421,7 @@ export function AutonomiaPost() {
             </a>
           </li>
           <li>
-            <span className="mr-2 font-medium text-plum-900">[5]</span> Horvitz, E. (1999).
+            <span className="mr-2 font-medium text-plum-900">[6]</span> Horvitz, E. (1999).
             Principles of Mixed-Initiative User Interfaces. Proceedings of the SIGCHI Conference
             on Human Factors in Computing Systems (CHI '99), 159-166. ACM.{" "}
             <a
