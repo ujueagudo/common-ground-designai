@@ -1,13 +1,13 @@
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import type { ReactElement } from "react";
 
-import { AnclajePost } from "@/content/AnclajePost";
 import { AutonomiaPost } from "@/content/AutonomiaPost";
+import { PrimaciaPost } from "@/content/PrimaciaPost";
 import { principles } from "@/data/principles";
 
 const bodies: Record<string, () => ReactElement> = {
   autonomia: AutonomiaPost,
-  anclaje: AnclajePost,
+  primacia: PrimaciaPost,
 };
 
 export const Route = createFileRoute("/principios/$slug")({

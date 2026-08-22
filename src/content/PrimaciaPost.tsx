@@ -2,7 +2,7 @@ import { Link } from "@tanstack/react-router";
 import { Github } from "lucide-react";
 import ilustracionAnclaje from "@/assets/principio-anclaje.png";
 
-export function AnclajePost() {
+export function PrimaciaPost() {
   return (
     <>
       {/* Lead hook */}
@@ -59,9 +59,10 @@ export function AnclajePost() {
 
         <h2 className="pt-8 font-display text-2xl font-extrabold text-plum-900">El principio</h2>
         <p>
-          Ver la propuesta de una IA antes de formar tu propio juicio ancla tu pensamiento a ella,
-          incluso si la respuesta es errónea. El efecto de este anclaje no depende de la calidad de
-          la respuesta, sino del momento en que la recibes: antes o después de pensar por ti.
+          Ver la propuesta de una IA antes de formar tu propio juicio provoca un efecto de
+          primacía que ancla tu pensamiento hacia esa propuesta, incluso si esta es errónea. El
+          impacto de este anclaje no depende de la calidad de la respuesta, sino del momento en
+          que la recibes: antes o después de pensar por ti.
         </p>
 
         <h2 className="pt-8 font-display text-2xl font-extrabold text-plum-900">
@@ -78,8 +79,8 @@ export function AnclajePost() {
           Por qué ocurre el problema
         </h2>
         <p>
-          Cuando trabajamos con IA, el anclaje surge de la colisión entre cómo están entrenados los
-          modelos y cómo funciona nuestra mente.
+          Cuando trabajamos con IA, este fenómeno de primación y anclaje surge de la colisión
+          entre cómo están entrenados los modelos y cómo funciona nuestra mente:
         </p>
         <p>
           <strong className="font-semibold text-plum-900">1. El sesgo de la IA</strong>

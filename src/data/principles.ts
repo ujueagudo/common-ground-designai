@@ -21,11 +21,11 @@ export const principles: Principle[] = [
   },
   {
     number: "02",
-    slug: "anclaje",
-    category: "Anclaje",
+    slug: "primacia",
+    category: "Primacía",
     title: "Cuándo (no) ver la respuesta de la IA antes de pensar la tuya",
     summary:
-      "Ver la propuesta de una IA antes de formar tu propio juicio ancla tu pensamiento a ella, incluso si es errónea. No depende de la calidad de la respuesta, sino del momento en que la recibes.",
+      "Ver la propuesta de una IA antes de formar tu propio juicio provoca un efecto de primacía que ancla tu pensamiento hacia esa propuesta, incluso si es errónea. No depende de la calidad de la respuesta, sino del momento en que la recibes.",
     published: true,
     accent: "--color-accent-violet",
   },
