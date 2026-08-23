@@ -1,12 +1,12 @@
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import type { ReactElement } from "react";
 
-import { AutonomiaPost } from "@/content/AutonomiaPost";
+import { DelegacionPost } from "@/content/DelegacionPost";
 import { PrimaciaPost } from "@/content/PrimaciaPost";
 import { principles } from "@/data/principles";
 
 const bodies: Record<string, () => ReactElement> = {
-  autonomia: AutonomiaPost,
+  delegacion: DelegacionPost,
   primacia: PrimaciaPost,
 };
 

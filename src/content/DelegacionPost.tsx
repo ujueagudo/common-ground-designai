@@ -17,7 +17,7 @@ Para tareas mecánicas o de procesamiento de información:
   (a) coste económico o de recursos (poner en marcha procesos, herramientas o tareas que tengan un coste asociado).
   (b) cambio de contexto o proyecto dentro de la misma conversación, aunque cada acción sea reversible.`;
 
-export function AutonomiaPost() {
+export function DelegacionPost() {
   const [copied, setCopied] = useState(false);
 
   const handleCopyRule = async () => {

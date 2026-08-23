@@ -6,7 +6,7 @@ Ask Claude to run `defend-it` on the deliverable. It reads the actual content, p
 
 This is not the same as asking Claude to review a plan before you build it (that's a different kind of skill, sometimes called "grilling"). This one runs after the work is done, on content you may not have produced yourself step by step, right before you have to hold it in your own head in front of someone else.
 
-Background on why this matters: [Autonomía según incertidumbre y coste de error](https://common-ground-designai.lovable.app/principios/autonomia), part of the Common Ground design principles.
+Background on why this matters: [Delegación según incertidumbre y coste de error](https://common-ground-designai.lovable.app/principios/delegacion), part of the Common Ground design principles.
 
 ## Install in Claude Code
 

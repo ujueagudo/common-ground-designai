@@ -152,7 +152,7 @@ export function PrimaciaPost() {
           En la práctica, este principio se apoya en la{" "}
           <Link
             to="/principios/$slug"
-            params={{ slug: "autonomia" }}
+            params={{ slug: "delegacion" }}
             hash="regla"
             className="text-plum-700 underline hover:text-plum-900"
           >
@@ -161,10 +161,10 @@ export function PrimaciaPost() {
           , definida en{" "}
           <Link
             to="/principios/$slug"
-            params={{ slug: "autonomia" }}
+            params={{ slug: "delegacion" }}
             className="text-plum-700 underline hover:text-plum-900"
           >
-            PRINCIPIO 01 - AUTONOMÍA
+            PRINCIPIO 01 - DELEGACIÓN
           </Link>
           , y se complementa con una skill diseñada específicamente para evitar el anclaje en
           procesos de análisis y toma de decisiones.

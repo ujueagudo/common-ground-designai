@@ -11,8 +11,8 @@ export type Principle = {
 export const principles: Principle[] = [
   {
     number: "01",
-    slug: "autonomia",
-    category: "Autonomía",
+    slug: "delegacion",
+    category: "Delegación",
     title: "Cuándo (no) delegar en la IA",
     summary:
       "Lo que decide si la IA puede actuar sola no es de qué trata la tarea, sino la incertidumbre sobre la intención y el coste de deshacer el error.",
