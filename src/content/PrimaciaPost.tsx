@@ -39,9 +39,9 @@ export function PrimaciaPost() {
           también la jota de corazones. ¿El secreto? Las siete cartas eran exactamente la misma,
           pero la advertencia del mago de que podía influir en las decisiones, aunque falsa,
           impedía a los participantes descubrir la verdad. De quienes recibieron la advertencia,
-          solo el 17% consiguió adivinar el truco, frente al 83% de quienes no recibieron. Además,
-          entre los que fallaron, el 80% siguió sin descubrirlo aún después de que se les invitara
-          explícitamente a buscar otra explicación
+          solo el 17% consiguió adivinar el truco, frente al 83% de quienes no la recibieron.
+          Además, entre los que fallaron, el 80% siguió sin descubrirlo aun después de que se les
+          invitara explícitamente a buscar otra explicación
           <sup className="px-0.5 text-plum-600">1</sup>.
         </p>
         <p>
@@ -69,10 +69,10 @@ export function PrimaciaPost() {
           Qué resuelve este principio
         </h2>
         <p>
-          Es una pauta de interacción para preservar el pensamiento crítico al colaborar con
-          modelos de lenguaje. Evita que una sugerencia prematura de la IA condicione tus ideas
-          antes de haber reflexionado, asegurando que tu planteamiento sea una construcción
-          realmente propia y no un simple ajuste sobre la propuesta del algoritmo.
+          Es una pauta de interacción para preservar el pensamiento crítico al colaborar con la
+          IA. Evita que una sugerencia prematura del algoritmo condicione tus ideas antes de
+          haber reflexionado, asegurando que tu planteamiento sea una construcción realmente
+          propia y no un simple ajuste sobre la propuesta del sistema.
         </p>
 
         <h2 className="pt-8 font-display text-2xl font-extrabold text-plum-900">
@@ -96,14 +96,14 @@ export function PrimaciaPost() {
                 ante una petición ambigua o abierta, la IA tiende a entregar una solución cerrada
                 de inmediato asumiendo la intención del usuario, en lugar de detenerse a pedir
                 aclaración
-                <sup className="px-0.5 text-plum-600">3</sup>. Y es que, a pesar de que suele
-                detectar internamente que la instrucción es ambigua, rara vez lo verbaliza en su
-                respuesta
-                <sup className="px-0.5 text-plum-600">4</sup>. Este sesgo se origina en el propio
-                entrenamiento con preferencias humanas: quienes evalúan las respuestas tienden a
-                premiar una respuesta directa y completa, aunque sea presuntuosa, por encima de una
-                pregunta de aclaración. Así, el sistema termina optimizado para darte una respuesta
-                inmediata que puede actuar como ancla en el usuario
+                <sup className="px-0.5 text-plum-600">3</sup>
+                <sup className="px-0.5 text-plum-600">4</sup>. Y es que, a pesar de que los
+                modelos suelen detectar internamente que la instrucción es incompleta o ambigua,
+                rara vez lo verbaliza en su respuesta final. Este sesgo se origina en el propio
+                entrenamiento con preferencias humanas (RLHF): quienes evalúan las respuestas
+                tienden a premiar una salida directa y completa, aunque sea presuntuosa, por
+                encima de una pregunta de aclaración. Así, el sistema termina optimizado para
+                ofrecer una respuesta inmediata que actúa como ancla automática para el usuario
                 <sup className="px-0.5 text-plum-600">5</sup>.
               </span>
             </li>
@@ -118,22 +118,27 @@ export function PrimaciaPost() {
               <span className="text-plum-600">●</span>
               <span>
                 <strong className="font-semibold text-plum-900">
-                  Efecto Einstellung (fijación):
+                  Efecto Einstellung (fijación mental):
                 </strong>{" "}
                 recibir una propuesta de solución, sea esta buena o mejorable, genera un bloqueo
-                que impide descubrir soluciones mejores. El psicólogo Abraham S. Luchins describió
-                este fenómeno en 1942: tras seguir un mismo procedimiento para resolver diversos
-                problemas, ante un problema nuevo la mayoría de participantes no lograba
-                desligarse del procedimiento utilizado, atascándose en su resolución, mientras que
+                que impide descubrir alternativas mejores. El psicólogo Abraham S. Luchins
+                describió este fenómeno en 1942: tras resolver varios problemas con un mismo
+                procedimiento, ante un problema nuevo la mayoría de participantes no lograba
+                desligarse del método utilizado, atascándose en su resolución; mientras que
                 quienes afrontaban el ejercicio por primera vez encontraban la solución sin
                 dificultad
                 <sup className="px-0.5 text-plum-600">6</sup>. Décadas después, Bilalić y colegas
-                replicaron el efecto en ajedrecistas expertos: ante una solución conocida de cinco
-                movimientos y otra, menos familiar, de solo tres, la mayoría se anclaba en la
-                conocida, incluso aunque buscaran activamente una alternativa: el seguimiento
-                ocular mostró que su mirada quedaba atrapada en las piezas de la solución familiar
-                <sup className="px-0.5 text-plum-600">7</sup>. No hace falta valorar en gran medida
-                la primera idea para quedar anclado: basta con haber estado expuesto a ella.
+                demostraron la fuerza de este efecto en ajedrecistas expertos. Ante un problema
+                con dos soluciones (una conocida de cinco movimientos y otra óptima, menos
+                familiar, de solo tres), la mayoría se ancló en la conocida. El análisis de
+                seguimiento ocular (eye-tracking) reveló algo fascinante: aunque los jugadores
+                afirmaban estar buscando activamente una alternativa mejor, sus ojos continuaban
+                fijos en las casillas asociadas a la primera solución. Su atención estaba
+                secuestrada por el primer esquema visualizado, impidiéndoles integrar la solución
+                óptima aunque la tuvieran delante
+                <sup className="px-0.5 text-plum-600">7</sup>. No hace falta valorar con
+                profundidad la primera idea para quedar anclado: basta con haber estado expuesto a
+                ella.
               </span>
             </li>
           </ul>
@@ -143,43 +148,56 @@ export function PrimaciaPost() {
           Cómo aplicar el principio
         </h2>
         <p>
-          Aplicar el principio no consiste únicamente en detenerse a reflexionar antes de usar la
-          IA. Se trata de estructurar la interacción para que el sistema abra el problema desde
-          diferentes ángulos sin anticipar sus propias soluciones hasta que tú hayas fijado tu
-          postura.
+          Aplicar el principio no consiste únicamente en esforzarse por "pensar más" ni en
+          intentar ignorar la propuesta de la IA una vez que la tienes en pantalla. Se trata de
+          diseñar el flujo de trabajo para forzar a la mente a detenerse y pensar antes de recibir
+          la propuesta de la IA. En psicología esto se conoce como funciones de forzado cognitivo:
+          mecanismos que interrumpen el piloto automático antes de que el algoritmo tome el
+          control
+          <sup className="px-0.5 text-plum-600">8</sup>
+          <sup className="px-0.5 text-plum-600">9</sup>.
         </p>
-        <p>
-          En la práctica, este principio se apoya en la{" "}
-          <Link
-            to="/principios/$slug"
-            params={{ slug: "delegacion" }}
-            hash="regla"
-            className="text-plum-700 underline hover:text-plum-900"
-          >
-            REGLA FILTRO AUTORAL
-          </Link>
-          , definida en{" "}
-          <Link
-            to="/principios/$slug"
-            params={{ slug: "delegacion" }}
-            className="text-plum-700 underline hover:text-plum-900"
-          >
-            PRINCIPIO 01 - DELEGACIÓN
-          </Link>
-          , y se complementa con una skill diseñada específicamente para evitar el anclaje en
-          procesos de análisis y toma de decisiones.
-        </p>
+        <p>En la práctica, este principio se articula mediante dos herramientas:</p>
+        <ol className="list-decimal list-outside space-y-4 pl-6 text-base">
+          <li>
+            <strong className="font-semibold text-plum-900">
+              En el día a día de la interacción: la Regla Filtro Autoral
+            </strong>
+            <br />
+            Definida en{" "}
+            <Link
+              to="/principios/$slug"
+              params={{ slug: "delegacion" }}
+              hash="regla"
+              className="text-plum-700 underline hover:text-plum-900"
+            >
+              PRINCIPIO 01 - DELEGACIÓN
+            </Link>
+            , esta regla le prohíbe a la IA entregarte soluciones cerradas o interpretativas de
+            entrada ante tareas conceptuales, obligándola a detenerse y ofrecer opciones o
+            preguntas en lugar de una respuesta ya cerrada.
+          </li>
+          <li>
+            <strong className="font-semibold text-plum-900">
+              En decisiones complejas: la Skill grill-me-socratic
+            </strong>
+            <br />
+            Invoca esta skill en las decisiones más complejas, donde el riesgo de anclarte a la
+            primera propuesta es mayor.
+          </li>
+        </ol>
 
         <h3 className="pt-8 font-display text-lg font-bold text-plum-900">
           Skill grill-me-socratic
         </h3>
         <p>
-          Para llevar esta pauta a la práctica, hemos desarrollado una variante de la skill
-          grill-me, adaptándola para que el asistente adopte un enfoque socrático ante un reto o
-          problema complejo. Invocando grill-me-socratic, la IA formula preguntas incisivas desde
-          distintos ángulos sin adelantar su propia recomendación. Solo ofrecerá su propuesta si se
-          le pide explícitamente, dándote así el tiempo y la oportunidad para definir tu propia
-          postura.
+          Hemos desarrollado una variante de la skill grill-me, adaptándola para que el asistente
+          adopte un enfoque socrático ante un reto o problema complejo. Invocando la skill
+          grill-me-socratic, la IA formula preguntas incisivas desde distintos ángulos sin
+          adelantar su propia recomendación. No actúa como un generador de respuestas ni como un
+          evaluador presuntuoso, sino como un facilitador que solo ofrecerá su propuesta si se le
+          pide explícitamente, dándote el tiempo y la oportunidad necesarios para definir tu
+          propia postura.
         </p>
         <div className="my-6 flex flex-col items-start justify-between gap-4 rounded-2xl border border-plum-200 bg-white p-6 shadow-sm sm:flex-row sm:items-center">
           <div>
@@ -199,9 +217,10 @@ export function PrimaciaPost() {
           </a>
         </div>
         <p>
-          Como en el truco de cartas, el proceso adecuado nunca fue pensar durante más tiempo sobre
-          la respuesta que ya se tenía delante, sino evitar que una propuesta ajena anclara la
-          propia.
+          Como demostró el truco de las cartas (y la mirada atrapada de los ajedrecistas), el
+          proceso adecuado nunca fue intentar pensar libremente sobre la respuesta que ya se tenía
+          delante, sino estructurar el proceso para evitar que una propuesta ajena, por mostrarse
+          primero, anclara la propia.
         </p>
       </div>
 
@@ -237,32 +256,20 @@ export function PrimaciaPost() {
             </a>
           </li>
           <li>
-            <span className="mr-2 font-medium text-plum-900">[3]</span> Anthropic (2026).
-            Transparency Hub: Model Report, Claude Sonnet 4.6, sección "Alignment Evaluations".{" "}
+            <span className="mr-2 font-medium text-plum-900">[3]</span> Anthropic (2026). System
+            Card: Claude Sonnet 4.6 (17 de febrero de 2026), sección "4.3.3 Overly agentic
+            behavior in GUI computer use settings".{" "}
             <a
-              href="https://www.anthropic.com/transparency/model-report"
+              href="https://www.anthropic.com/claude-sonnet-4-6-system-card"
               target="_blank"
               rel="noopener noreferrer"
               className="text-plum-700 underline hover:text-plum-900"
             >
-              https://www.anthropic.com/transparency/model-report
+              https://www.anthropic.com/claude-sonnet-4-6-system-card
             </a>
           </li>
           <li>
-            <span className="mr-2 font-medium text-plum-900">[4]</span> Su, Z., & Cardie, C.
-            (2026). Knowing but Not Showing: LLMs Recognize Ambiguity but Rarely Ask Clarifying
-            Questions. arXiv:2605.25284.{" "}
-            <a
-              href="https://arxiv.org/abs/2605.25284"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-plum-700 underline hover:text-plum-900"
-            >
-              https://arxiv.org/abs/2605.25284
-            </a>
-          </li>
-          <li>
-            <span className="mr-2 font-medium text-plum-900">[5]</span> Wang, W., Shi, J., Ling,
+            <span className="mr-2 font-medium text-plum-900">[4]</span> Wang, W., Shi, J., Ling,
             Z., Chan, Y.-K., Wang, C., Lee, C., Yuan, Y., Huang, J., Jiao, W., & Lyu, M. R. (2024).
             Learning to Ask: When LLM Agents Meet Unclear Instruction. arXiv:2409.00557 (v4,
             revisado 29 de abril de 2026).{" "}
@@ -273,6 +280,19 @@ export function PrimaciaPost() {
               className="text-plum-700 underline hover:text-plum-900"
             >
               https://arxiv.org/abs/2409.00557
+            </a>
+          </li>
+          <li>
+            <span className="mr-2 font-medium text-plum-900">[5]</span> Su, J., & Cardie, C.
+            (2026). Knowing but Not Showing: LLMs Recognize Ambiguity but Rarely Ask Clarifying
+            Questions. arXiv:2605.25284.{" "}
+            <a
+              href="https://arxiv.org/abs/2605.25284"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-plum-700 underline hover:text-plum-900"
+            >
+              https://arxiv.org/abs/2605.25284
             </a>
           </li>
           <li>
@@ -290,15 +310,43 @@ export function PrimaciaPost() {
           </li>
           <li>
             <span className="mr-2 font-medium text-plum-900">[7]</span> Bilalić, M., McLeod, P., &
-            Gobet, F. (2008). Inflexibility of experts: reality or myth? Quantifying the
-            Einstellung effect in chess masters. Cognitive Psychology, 56(2), 73-102.{" "}
+            Gobet, F. (2008). Why good thoughts block better ones: The mechanism of the pernicious
+            Einstellung (set) effect. Cognition, 108(3), 652-661.{" "}
             <a
-              href="https://doi.org/10.1016/j.cogpsych.2007.02.001"
+              href="https://doi.org/10.1016/j.cognition.2008.05.005"
               target="_blank"
               rel="noopener noreferrer"
               className="text-plum-700 underline hover:text-plum-900"
             >
-              https://doi.org/10.1016/j.cogpsych.2007.02.001
+              https://doi.org/10.1016/j.cognition.2008.05.005
+            </a>
+          </li>
+          <li>
+            <span className="mr-2 font-medium text-plum-900">[8]</span> Buçinca, Z., Malaya, M.
+            B., & Gajos, K. Z. (2021). To Trust or to Think: Cognitive Forcing Functions Can
+            Reduce Overreliance on AI in AI-assisted Decision-making. Proceedings of the ACM on
+            Human-Computer Interaction, 5(CSCW1), Article 188.{" "}
+            <a
+              href="https://doi.org/10.1145/3449287"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-plum-700 underline hover:text-plum-900"
+            >
+              https://doi.org/10.1145/3449287
+            </a>
+          </li>
+          <li>
+            <span className="mr-2 font-medium text-plum-900">[9]</span> Agudo, U., & Vinas, A.
+            (2025). Frictions as Boosts to Improve AI-Human Collaborative Decision Processes. En
+            I. Aliende (Ed.), Applied Behavioral Economics: Theory, Method, and Practice for
+            Driving Decisions. Nova Publishers.{" "}
+            <a
+              href="https://doi.org/10.52305/CZRL5358"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-plum-700 underline hover:text-plum-900"
+            >
+              https://doi.org/10.52305/CZRL5358
             </a>
           </li>
         </ol>
