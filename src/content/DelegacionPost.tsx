@@ -122,7 +122,9 @@ export function DelegacionPost() {
             <li className="flex gap-3">
               <span className="text-plum-600">●</span>
               <span>
-                <strong className="font-semibold text-plum-900">Sesgo de automatización:</strong>{" "}
+                <strong className="font-semibold text-plum-900">
+                  Sesgo de automatización (automation bias):
+                </strong>{" "}
                 tendemos a aceptar por defecto lo que el sistema propone por pura economía
                 cognitiva
                 <sup className="px-0.5 text-plum-600">2</sup>. Tener la posibilidad de corregir a
@@ -134,20 +136,37 @@ export function DelegacionPost() {
             <li className="flex gap-3">
               <span className="text-plum-600">●</span>
               <span>
-                <strong className="font-semibold text-plum-900">Fatiga de vigilancia:</strong> los
-                humanos tenemos serias dificultades para mantener una vigilancia sostenida:
+                <strong className="font-semibold text-plum-900">
+                  Fatiga de vigilancia (vigilance decrement) + Ceguera inatencional (inattentional
+                  blindness):
+                </strong>{" "}
+                los humanos tenemos serias dificultades para mantener una vigilancia sostenida:
                 incluso operadores expertos fallan en detectar estímulos relevantes durante una
                 supervisión prolongada
-                <sup className="px-0.5 text-plum-600">3</sup>. Asegurarse de que la IA no está
+                <sup className="px-0.5 text-plum-600">3</sup>
+                <sup className="px-0.5 text-plum-600">4</sup>. Asegurarse de que la IA no está
                 tomando decisiones inadecuadas dentro de un proceso continuo (aunque estas se
                 declaren) resulta difícil de detectar.
+              </span>
+            </li>
+            <li className="flex gap-3">
+              <span className="text-plum-600">●</span>
+              <span>
+                <strong className="font-semibold text-plum-900">
+                  Pérdida de conciencia situacional (loss of situation awareness):
+                </strong>{" "}
+                cuanto más automatizada está una tarea, más tarda la persona en recuperar el
+                control si hace falta, porque el paso de procesar activamente a solo observar
+                impide construir un modelo mental real de lo que está pasando
+                <sup className="px-0.5 text-plum-600">5</sup>. Lo más llamativo: esa pérdida de
+                comprensión no reduce la confianza en el propio criterio, la aumenta.
               </span>
             </li>
           </ul>
         </div>
 
         <h2 className="pt-8 font-display text-2xl font-extrabold text-plum-900">
-          El riesgo: la ilusión de profundidad explicativa
+          El riesgo: la ilusión de profundidad explicativa (illusion of explanatory depth)
         </h2>
         <p>
           Delegar de forma indiscriminada tareas interpretativas o decisiones intermedias genera
@@ -157,7 +176,8 @@ export function DelegacionPost() {
           </strong>
           : la falsa sensación de que se entiende un proceso o una propuesta simplemente porque el
           resultado final es coherente y estético
-          <sup className="px-0.5 text-plum-600">4</sup>.
+          <sup className="px-0.5 text-plum-600">5</sup>
+          <sup className="px-0.5 text-plum-600">6</sup>.
         </p>
         <p>
           Cuando una persona no ha atravesado el proceso de decidir qué entra, qué sale y por qué,
@@ -189,14 +209,14 @@ export function DelegacionPost() {
           la propia interacción. Por eso lo que importa no es la fase, sino lo que vayas a tener
           que defender ante otros: todo lo que constituya el núcleo conceptual, interpretativo o
           estratégico tiene que permanecer bajo tu control directo
-          <sup className="px-0.5 text-plum-600">5</sup>. El resto, las tareas operativas o
+          <sup className="px-0.5 text-plum-600">7</sup>. El resto, las tareas operativas o
           mecánicas que no requieren ese juicio interpretativo, pueden ser delegadas a la IA
           siguiendo el criterio de la Capa 2.
         </p>
         <p>
           <strong className="font-semibold text-plum-900">Capa 2: la matriz de Horvitz.</strong>{" "}
           Para tareas operativas o mecánicas, la autonomía se rige por dos variables formuladas
-          por Eric Horvitz en 1999<sup className="px-0.5 text-plum-600">6</sup>:
+          por Eric Horvitz en 1999<sup className="px-0.5 text-plum-600">8</sup>:
         </p>
         <div className="rounded-2xl bg-plum-50 p-8">
           <ul className="space-y-3 text-base">
@@ -230,8 +250,8 @@ export function DelegacionPost() {
           Cómo aplicar este principio: dos reglas y una skill
         </h2>
         <p>
-          Este principio se traduce en dos mecanismos que modulan la colaboración con la IA, y una
-          skill para ponerte a prueba al terminar dicha colaboración.
+          Este principio de Delegación se traduce en dos mecanismos que modulan la colaboración
+          con la IA, y una skill para ponerte a prueba al terminar dicha colaboración.
         </p>
 
         <h3 className="pt-2 font-display text-lg font-bold text-plum-900">
@@ -401,7 +421,33 @@ export function DelegacionPost() {
             </a>
           </li>
           <li>
-            <span className="mr-2 font-medium text-plum-900">[4]</span> Rozenblit, L., & Keil, F.
+            <span className="mr-2 font-medium text-plum-900">[4]</span> Mackworth, N. H. (1948).
+            The Breakdown of Vigilance during Prolonged Visual Search. Quarterly Journal of
+            Experimental Psychology, 1(1), 6-21.{" "}
+            <a
+              href="https://doi.org/10.1080/17470214808416738"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-plum-700 underline hover:text-plum-900"
+            >
+              https://doi.org/10.1080/17470214808416738
+            </a>
+          </li>
+          <li>
+            <span className="mr-2 font-medium text-plum-900">[5]</span> Endsley, M. R., & Kiris,
+            E. O. (1995). The Out-of-the-Loop Performance Problem and Level of Control in
+            Automation. Human Factors, 37(2), 381-394.{" "}
+            <a
+              href="https://doi.org/10.1518/001872095779064555"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-plum-700 underline hover:text-plum-900"
+            >
+              https://doi.org/10.1518/001872095779064555
+            </a>
+          </li>
+          <li>
+            <span className="mr-2 font-medium text-plum-900">[6]</span> Rozenblit, L., & Keil, F.
             (2002). The misunderstood limits of folk science: An illusion of explanatory depth.
             Cognitive Science, 26(5), 521-562.{" "}
             <a
@@ -414,7 +460,7 @@ export function DelegacionPost() {
             </a>
           </li>
           <li>
-            <span className="mr-2 font-medium text-plum-900">[5]</span> Tomašev, N., Franklin,
+            <span className="mr-2 font-medium text-plum-900">[7]</span> Tomašev, N., Franklin,
             M., & Osindero, S. (2026). Intelligent AI Delegation. Google DeepMind
             (preprint).{" "}
             <a
@@ -427,7 +473,7 @@ export function DelegacionPost() {
             </a>
           </li>
           <li>
-            <span className="mr-2 font-medium text-plum-900">[6]</span> Horvitz, E. (1999).
+            <span className="mr-2 font-medium text-plum-900">[8]</span> Horvitz, E. (1999).
             Principles of Mixed-Initiative User Interfaces. Proceedings of the SIGCHI Conference
             on Human Factors in Computing Systems (CHI '99), 159-166. ACM.{" "}
             <a

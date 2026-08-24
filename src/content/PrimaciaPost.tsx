@@ -60,7 +60,8 @@ export function PrimaciaPost() {
         <h2 className="pt-8 font-display text-2xl font-extrabold text-plum-900">El principio</h2>
         <p>
           Ver la propuesta de una IA antes de formar tu propio juicio provoca un efecto de
-          primacía que ancla tu pensamiento hacia esa propuesta, incluso si esta es errónea. El
+          primacía (primacy effect) que ancla tu pensamiento hacia esa propuesta, incluso si esta
+          es errónea. El
           impacto de este anclaje no depende de la calidad de la respuesta, sino del momento en
           que la recibes: antes o después de pensar por ti.
         </p>
