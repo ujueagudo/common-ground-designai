@@ -179,7 +179,6 @@ export function DelegacionPost() {
           </strong>
           : la falsa sensación de que se entiende un proceso o una propuesta simplemente porque el
           resultado final es coherente y estético
-          <sup className="px-0.5 text-plum-600">6</sup>
           <sup className="px-0.5 text-plum-600">7</sup>.
         </p>
         <p>
