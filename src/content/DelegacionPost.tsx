@@ -5,7 +5,7 @@ import ilustracionAutoridad from "@/assets/principio-autoridad.jpg";
 const RULE_TEXT = `### REGLA DE AUTONOMÍA Y DELEGACIÓN
 
 REGLA FILTRO AUTORAL:
-Si la solicitud del usuario involucra decisiones interpretativas, conceptuales o estratégicas, NO generes la solución final directamente. Detente y ofrece opciones.
+Si la solicitud del usuario implica juicios interpretativos, conceptuales, estratégicos o subjetivos (el criterio de éxito depende de preferencias o valores humanos, no de reglas objetivas y verificables), NO generes la solución final directamente. Detente y ofrece opciones.
 
 REGLA MATRIZ DE HORVITZ:
 Para tareas mecánicas o de procesamiento de información:
@@ -135,8 +135,9 @@ export function DelegacionPost() {
               <span className="text-plum-600">●</span>
               <span>
                 <strong className="font-semibold text-plum-900">Fatiga de vigilancia:</strong> los
-                humanos tenemos serias dificultades para mantener una vigilancia sostenida, un
-                hallazgo asentado en psicología desde hace décadas
+                humanos tenemos serias dificultades para mantener una vigilancia sostenida:
+                incluso operadores expertos fallan en detectar estímulos relevantes durante una
+                supervisión prolongada
                 <sup className="px-0.5 text-plum-600">3</sup>. Asegurarse de que la IA no está
                 tomando decisiones inadecuadas dentro de un proceso continuo (aunque estas se
                 declaren) resulta difícil de detectar.
@@ -182,12 +183,15 @@ export function DelegacionPost() {
         </div>
         <p>
           <strong className="font-semibold text-plum-900">Capa 1: el filtro autoral.</strong> El
-          trabajo no se reparte por fases ("la IA al principio, la persona al final"), sino por
-          responsabilidad. Todo lo que constituya el núcleo conceptual, interpretativo o
-          estratégico que la persona deba defender debe permanecer bajo su control directo
+          trabajo no se reparte por fases ("la IA al principio, la persona al final"). Ese
+          reparto es propio de los sistemas de recomendación clásicos, donde la autoridad se fija
+          de antemano; en la colaboración con un LLM o un agente, en cambio, se negocia dentro de
+          la propia interacción. Por eso lo que importa no es la fase, sino lo que vayas a tener
+          que defender ante otros: todo lo que constituya el núcleo conceptual, interpretativo o
+          estratégico tiene que permanecer bajo tu control directo
           <sup className="px-0.5 text-plum-600">5</sup>. El resto, las tareas operativas o
-          mecánicas que no requieren ese juicio interpretativo, pueden ser resueltas por la IA de
-          forma autónoma siguiendo el criterio de la Capa 2.
+          mecánicas que no requieren ese juicio interpretativo, pueden ser delegadas a la IA
+          siguiendo el criterio de la Capa 2.
         </p>
         <p>
           <strong className="font-semibold text-plum-900">Capa 2: la matriz de Horvitz.</strong>{" "}
@@ -265,9 +269,10 @@ export function DelegacionPost() {
             Regla filtro autoral
           </p>
           <p className="mb-8 leading-relaxed opacity-90">
-            Si la solicitud del usuario involucra decisiones interpretativas, conceptuales o
-            estratégicas, no generar la solución final directamente. Detenerse y ofrecer
-            opciones.
+            Si la solicitud del usuario implica juicios interpretativos, conceptuales,
+            estratégicos o subjetivos (el criterio de éxito depende de preferencias o valores
+            humanos, no de reglas objetivas y verificables), no generar la solución final
+            directamente. Detenerse y ofrecer opciones.
           </p>
           <p className="mb-2 text-sm font-bold uppercase tracking-wide text-cream/70">
             Regla matriz de Horvitz
@@ -356,16 +361,16 @@ export function DelegacionPost() {
         </h2>
         <ol className="space-y-3 text-xs leading-relaxed text-plum-900/60">
           <li>
-            <span className="mr-2 font-medium text-plum-900">[1]</span> Anthropic (2026).
-            Transparency Hub: Model Report, Claude Sonnet 4.6, sección "Alignment
-            Evaluations".{" "}
+            <span className="mr-2 font-medium text-plum-900">[1]</span> Anthropic (2026). System
+            Card: Claude Sonnet 4.6 (17 de febrero de 2026), sección "4.3.3 Overly agentic
+            behavior in GUI computer use settings".{" "}
             <a
-              href="https://www.anthropic.com/transparency/model-report"
+              href="https://www.anthropic.com/claude-sonnet-4-6-system-card"
               target="_blank"
               rel="noopener noreferrer"
               className="text-plum-700 underline hover:text-plum-900"
             >
-              https://www.anthropic.com/transparency/model-report
+              https://www.anthropic.com/claude-sonnet-4-6-system-card
             </a>
           </li>
           <li>
@@ -382,16 +387,17 @@ export function DelegacionPost() {
             </a>
           </li>
           <li>
-            <span className="mr-2 font-medium text-plum-900">[3]</span> Mackworth, N. H. (1948).
-            The breakdown of vigilance during prolonged visual search. Quarterly Journal of
-            Experimental Psychology, 1, 6-21.{" "}
+            <span className="mr-2 font-medium text-plum-900">[3]</span> Näsholm, E., Rohlfing,
+            S., & Sauer, J. D. (2014). Pirate Stealth or Inattentional Blindness? The Effects of
+            Target Relevance and Sustained Attention on Security Monitoring for Experienced and
+            Naïve Operators. PLoS ONE, 9(1), e86157.{" "}
             <a
-              href="https://doi.org/10.1080/17470214808416738"
+              href="https://doi.org/10.1371/journal.pone.0086157"
               target="_blank"
               rel="noopener noreferrer"
               className="text-plum-700 underline hover:text-plum-900"
             >
-              https://doi.org/10.1080/17470214808416738
+              https://doi.org/10.1371/journal.pone.0086157
             </a>
           </li>
           <li>
@@ -408,16 +414,16 @@ export function DelegacionPost() {
             </a>
           </li>
           <li>
-            <span className="mr-2 font-medium text-plum-900">[5]</span> Verhagen, R. S., Neerincx,
-            M. A., & Tielman, M. L. (2025). Agent Allocation of Moral Decisions in Human-Agent
-            Teams. Proceedings of FAccT '25, 2302-2317.{" "}
+            <span className="mr-2 font-medium text-plum-900">[5]</span> Tomašev, N., Franklin,
+            M., & Osindero, S. (2026). Intelligent AI Delegation. Google DeepMind
+            (preprint).{" "}
             <a
-              href="https://doi.org/10.1145/3715275.3732157"
+              href="https://doi.org/10.48550/arXiv.2602.11865"
               target="_blank"
               rel="noopener noreferrer"
               className="text-plum-700 underline hover:text-plum-900"
             >
-              https://doi.org/10.1145/3715275.3732157
+              https://doi.org/10.48550/arXiv.2602.11865
             </a>
           </li>
           <li>
