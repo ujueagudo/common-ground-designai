@@ -49,10 +49,14 @@ export function PrimaciaPost() {
           participantes que juzgaran la culpabilidad de acusados a partir de testimonios, viendo la
           sugerencia de una IA antes o después de tomar su propia decisión. Cuando la IA se
           equivocaba, las personas que juzgaron{" "}
-          <strong className="font-semibold text-plum-900">antes</strong> de ver la IA acertaron el{" "}
-          <strong className="font-semibold text-plum-900">66%</strong> de las veces. Las que vieron
-          la propuesta de la IA <strong className="font-semibold text-plum-900">antes</strong> de
-          tomar su decisión, se anclaron en dicha propuesta y solo acertaron en el{" "}
+          <strong className="font-semibold text-plum-900">antes</strong>{" "}
+          <strong className="font-semibold text-plum-900">de ver la IA</strong> acertaron el{" "}
+          <strong className="font-semibold text-plum-900">66%</strong> de las veces. En cambio, las
+          que decidieron{" "}
+          <strong className="font-semibold text-plum-900">
+            después de ver la propuesta de la IA
+          </strong>{" "}
+          se anclaron en ella y solo acertaron en el{" "}
           <strong className="font-semibold text-plum-900">37%</strong> de las ocasiones
           <sup className="px-0.5 text-plum-600">2</sup>.
         </p>
