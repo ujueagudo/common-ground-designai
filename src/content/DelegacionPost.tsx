@@ -59,13 +59,11 @@ export function DelegacionPost() {
           El principio
         </h2>
         <p>
-          Un sistema de IA no debe asumir autonomía basándose en su capacidad técnica para
-          realizar una tarea, sino en tres factores:{" "}
-          <strong className="font-semibold text-plum-900">
-            la preservación de la responsabilidad autoral del usuario, el nivel de incertidumbre y
-            el coste de error
-          </strong>
-          .
+          La capacidad técnica de un sistema de IA para realizar una tarea no justifica su
+          autonomía. La decisión de delegar debe evaluar primero si el trabajo requiere
+          intención, criterio o responsabilidad autoral; solo fuera de ese perímetro se podrá
+          ajustar el grado de autonomía de la IA en función de la incertidumbre y el coste de
+          error.
         </p>
 
         <h2 className="pt-8 font-display text-2xl font-extrabold text-plum-900">
