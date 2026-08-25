@@ -63,11 +63,11 @@ export function PrimaciaPost() {
 
         <h2 className="pt-8 font-display text-2xl font-extrabold text-plum-900">El principio</h2>
         <p>
-          Ver la propuesta de una IA antes de formar tu propio juicio provoca un efecto de
-          primacía (primacy effect) que ancla tu pensamiento hacia esa propuesta, incluso si esta
-          es errónea. El
-          impacto de este anclaje no depende de la calidad de la respuesta, sino del momento en
-          que la recibes: antes o después de pensar por ti.
+          En cualquier tarea que requiera juicio crítico, intención creativa o responsabilidad
+          propia, la reflexión humana debe preceder a la respuesta del algoritmo. El orden de la
+          interacción determina tu independencia: para que tu pensamiento prevalezca, debes
+          formular tu postura antes de exponerte al efecto de anclaje que genera la sugerencia de
+          la IA.
         </p>
 
         <h2 className="pt-8 font-display text-2xl font-extrabold text-plum-900">
@@ -84,8 +84,8 @@ export function PrimaciaPost() {
           Por qué ocurre el problema
         </h2>
         <p>
-          Cuando trabajamos con IA, este fenómeno de primación y anclaje surge de la colisión
-          entre cómo están entrenados los modelos y cómo funciona nuestra mente:
+          Cuando trabajamos con IA, este fenómeno de anclaje surge de la colisión entre cómo están
+          entrenados los modelos y cómo funciona nuestra mente:
         </p>
         <p>
           <strong className="font-semibold text-plum-900">1. El sesgo de la IA</strong>
@@ -123,6 +123,20 @@ export function PrimaciaPost() {
               <span className="text-plum-600">●</span>
               <span>
                 <strong className="font-semibold text-plum-900">
+                  Sesgo de anclaje (anchoring bias):
+                </strong>{" "}
+                al realizar una estimación o emitir un juicio, la mente tiende a fijarse en una
+                primera información recibida como punto de referencia inicial y realizar ajustes
+                desde ella. El problema radica en que este proceso de ajuste suele ser
+                insuficiente, haciendo que la respuesta o el juicio final queden sistemáticamente
+                sesgados hacia el punto de partida
+                <sup className="px-0.5 text-plum-600">6</sup>.
+              </span>
+            </li>
+            <li className="flex gap-3">
+              <span className="text-plum-600">●</span>
+              <span>
+                <strong className="font-semibold text-plum-900">
                   Efecto Einstellung (fijación mental):
                 </strong>{" "}
                 recibir una propuesta de solución, sea esta buena o mejorable, genera un bloqueo
@@ -132,7 +146,7 @@ export function PrimaciaPost() {
                 desligarse del método utilizado, atascándose en su resolución; mientras que
                 quienes afrontaban el ejercicio por primera vez encontraban la solución sin
                 dificultad
-                <sup className="px-0.5 text-plum-600">6</sup>. Décadas después, Bilalić y colegas
+                <sup className="px-0.5 text-plum-600">7</sup>. Décadas después, Bilalić y colegas
                 demostraron la fuerza de este efecto en ajedrecistas expertos. Ante un problema
                 con dos soluciones (una conocida de cinco movimientos y otra óptima, menos
                 familiar, de solo tres), la mayoría se ancló en la conocida. El análisis de
@@ -141,7 +155,7 @@ export function PrimaciaPost() {
                 fijos en las casillas asociadas a la primera solución. Su atención estaba
                 secuestrada por el primer esquema visualizado, impidiéndoles integrar la solución
                 óptima aunque la tuvieran delante
-                <sup className="px-0.5 text-plum-600">7</sup>. No hace falta valorar con
+                <sup className="px-0.5 text-plum-600">8</sup>. No hace falta valorar con
                 profundidad la primera idea para quedar anclado: basta con haber estado expuesto a
                 ella.
               </span>
@@ -159,8 +173,8 @@ export function PrimaciaPost() {
           la propuesta de la IA. En psicología esto se conoce como funciones de forzado cognitivo:
           mecanismos que interrumpen el piloto automático antes de que el algoritmo tome el
           control
-          <sup className="px-0.5 text-plum-600">8</sup>
-          <sup className="px-0.5 text-plum-600">9</sup>.
+          <sup className="px-0.5 text-plum-600">9</sup>
+          <sup className="px-0.5 text-plum-600">10</sup>.
         </p>
         <p>En la práctica, este principio se articula mediante dos herramientas:</p>
         <ol className="list-decimal list-outside space-y-4 pl-6 text-base">
@@ -301,7 +315,20 @@ export function PrimaciaPost() {
             </a>
           </li>
           <li>
-            <span className="mr-2 font-medium text-plum-900">[6]</span> Luchins, A. S. (1942).
+            <span className="mr-2 font-medium text-plum-900">[6]</span> Tversky, A., & Kahneman,
+            D. (1974). Judgment under uncertainty: Heuristics and biases. Science, 185(4157),
+            1124-1131.{" "}
+            <a
+              href="https://doi.org/10.1126/science.185.4157.1124"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-plum-700 underline hover:text-plum-900"
+            >
+              https://doi.org/10.1126/science.185.4157.1124
+            </a>
+          </li>
+          <li>
+            <span className="mr-2 font-medium text-plum-900">[7]</span> Luchins, A. S. (1942).
             Mechanization in problem solving: The effect of Einstellung. Psychological Monographs,
             54(6), Whole No. 248.{" "}
             <a
@@ -314,7 +341,7 @@ export function PrimaciaPost() {
             </a>
           </li>
           <li>
-            <span className="mr-2 font-medium text-plum-900">[7]</span> Bilalić, M., McLeod, P., &
+            <span className="mr-2 font-medium text-plum-900">[8]</span> Bilalić, M., McLeod, P., &
             Gobet, F. (2008). Why good thoughts block better ones: The mechanism of the pernicious
             Einstellung (set) effect. Cognition, 108(3), 652-661.{" "}
             <a
@@ -327,7 +354,7 @@ export function PrimaciaPost() {
             </a>
           </li>
           <li>
-            <span className="mr-2 font-medium text-plum-900">[8]</span> Buçinca, Z., Malaya, M.
+            <span className="mr-2 font-medium text-plum-900">[9]</span> Buçinca, Z., Malaya, M.
             B., & Gajos, K. Z. (2021). To Trust or to Think: Cognitive Forcing Functions Can
             Reduce Overreliance on AI in AI-assisted Decision-making. Proceedings of the ACM on
             Human-Computer Interaction, 5(CSCW1), Article 188.{" "}
@@ -341,7 +368,7 @@ export function PrimaciaPost() {
             </a>
           </li>
           <li>
-            <span className="mr-2 font-medium text-plum-900">[9]</span> Agudo, U., & Vinas, A.
+            <span className="mr-2 font-medium text-plum-900">[10]</span> Agudo, U., & Vinas, A.
             (2025). Frictions as Boosts to Improve AI-Human Collaborative Decision Processes. En
             I. Aliende (Ed.), Applied Behavioral Economics: Theory, Method, and Practice for
             Driving Decisions. Nova Publishers.{" "}
