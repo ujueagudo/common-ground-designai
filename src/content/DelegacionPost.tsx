@@ -159,8 +159,7 @@ export function DelegacionPost() {
                 cuanto más automatizada está una tarea, más tarda la persona en recuperar el
                 control si hace falta, porque el paso de procesar activamente a solo observar
                 impide construir un modelo mental real de lo que está pasando
-                <sup className="px-0.5 text-plum-600">6</sup>. Lo más llamativo: esa pérdida de
-                comprensión no reduce la confianza en el propio criterio, la aumenta.
+                <sup className="px-0.5 text-plum-600">6</sup>.
               </span>
             </li>
           </ul>
